@@ -1,0 +1,11 @@
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\ZFreeGo.Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\ZFreeGo.Common\bin\Debug\Common.dll
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\ZFreeGo.Common\bin\Debug\Common.pdb
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\ZFreeGo.Common\obj\Debug\Common.dll
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\ZFreeGo.Common\obj\Debug\Common.pdb
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\ZFreeGo.Common\obj\Debug\Common.csprojAssemblyReference.cache
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\Common\bin\Debug\Common.dll
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\Common\bin\Debug\Common.pdb
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\Common\obj\Debug\Common.dll
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\Common\obj\Debug\Common.pdb

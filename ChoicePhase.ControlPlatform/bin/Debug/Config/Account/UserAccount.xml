@@ -1,0 +1,45 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <UserAccount>
+    <UserName>Admin</UserName>
+    <PassWord>1234abc!</PassWord>
+    <PowerLevel>4</PowerLevel>
+    <LastLogin>yes</LastLogin>
+  </UserAccount>
+  <UserAccount>
+    <UserName>sa</UserName>
+    <PassWord>123456a!</PassWord>
+    <PowerLevel>3</PowerLevel>
+    <LastLogin>no</LastLogin>
+  </UserAccount>
+  <UserAccount>
+    <UserName>cd</UserName>
+    <PassWord>12345678!!q</PassWord>
+    <PowerLevel>2</PowerLevel>
+    <LastLogin>no</LastLogin>
+  </UserAccount>
+  <UserAccount>
+    <UserName>ef</UserName>
+    <PassWord>12345678!!q</PassWord>
+    <PowerLevel>2</PowerLevel>
+    <LastLogin>no</LastLogin>
+  </UserAccount>
+  <UserAccount>
+    <UserName>efff34</UserName>
+    <PassWord>12345678!!q</PassWord>
+    <PowerLevel>3</PowerLevel>
+    <LastLogin>no</LastLogin>
+  </UserAccount>
+  <UserAccount>
+    <UserName>c2</UserName>
+    <PassWord>12345678q!</PassWord>
+    <PowerLevel>1</PowerLevel>
+    <LastLogin>no</LastLogin>
+  </UserAccount>
+  <UserAccount>
+    <UserName>45</UserName>
+    <PassWord>12345678q!</PassWord>
+    <PowerLevel>1</PowerLevel>
+    <LastLogin>no</LastLogin>
+  </UserAccount>
+</NewDataSet>

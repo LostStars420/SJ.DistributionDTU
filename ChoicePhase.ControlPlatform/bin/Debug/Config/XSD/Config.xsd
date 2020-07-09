@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:Locale="en-US">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SerialPort">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CommonPort" type="xs:int" minOccurs="0" />
+              <xs:element name="Baud" type="xs:int" minOccurs="0" />
+              <xs:element name="DataBit" type="xs:int" minOccurs="0" />
+              <xs:element name="ParityBit" type="xs:int" minOccurs="0" />
+              <xs:element name="StopBit" type="xs:int" minOccurs="0" />             
+            </xs:sequence>
+          </xs:complexType>		  
+        </xs:element>
+		 <xs:element name="ConfigParameter">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EnabitSelect" type="xs:int" minOccurs="0" />
+              <xs:element name="SynCloseActionOverTime" type="xs:int" minOccurs="0" />
+              <xs:element name="OpenActionOverTime" type="xs:int" minOccurs="0" />
+              <xs:element name="CloseActionOverTime" type="xs:int" minOccurs="0" />
+			  <xs:element name="ClosePowerOnTime" type="xs:int" minOccurs="0" />  
+              <xs:element name="OpenPowerOnTime" type="xs:int" minOccurs="0" />  
+			  <xs:element name="WorkMode" type="xs:int" minOccurs="0" />      			  
+			
+            </xs:sequence>
+          </xs:complexType>		  
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

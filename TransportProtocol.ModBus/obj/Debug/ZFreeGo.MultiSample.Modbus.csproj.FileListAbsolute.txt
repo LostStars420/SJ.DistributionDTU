@@ -1,0 +1,10 @@
+H:\MyCode\Dotnet\ZFreeGo.MultiSample\ZFreeGo.IntelligentControlPlatform.Modbus\bin\Debug\ZFreeGo.MultiSample.Modbus.dll
+H:\MyCode\Dotnet\ZFreeGo.MultiSample\ZFreeGo.IntelligentControlPlatform.Modbus\bin\Debug\ZFreeGo.MultiSample.Modbus.pdb
+H:\MyCode\Dotnet\ZFreeGo.MultiSample\ZFreeGo.IntelligentControlPlatform.Modbus\obj\Debug\ZFreeGo.MultiSample.Modbus.dll
+H:\MyCode\Dotnet\ZFreeGo.MultiSample\ZFreeGo.IntelligentControlPlatform.Modbus\obj\Debug\ZFreeGo.MultiSample.Modbus.pdb
+H:\MyCode\Dotnet\ZFreeGo.MultiSample\ZFreeGo.IntelligentControlPlatform.Modbus\obj\Debug\ZFreeGo.MultiSample.Modbus.csprojResolveAssemblyReference.cache
+G:\MyCode\Dotnet\ZFreeGo.MultiSample\ZFreeGo.IntelligentControlPlatform.Modbus\bin\Debug\ZFreeGo.MultiSample.Modbus.dll
+G:\MyCode\Dotnet\ZFreeGo.MultiSample\ZFreeGo.IntelligentControlPlatform.Modbus\bin\Debug\ZFreeGo.MultiSample.Modbus.pdb
+G:\MyCode\Dotnet\ZFreeGo.MultiSample\ZFreeGo.IntelligentControlPlatform.Modbus\obj\Debug\ZFreeGo.MultiSample.Modbus.csprojResolveAssemblyReference.cache
+G:\MyCode\Dotnet\ZFreeGo.MultiSample\ZFreeGo.IntelligentControlPlatform.Modbus\obj\Debug\ZFreeGo.MultiSample.Modbus.dll
+G:\MyCode\Dotnet\ZFreeGo.MultiSample\ZFreeGo.IntelligentControlPlatform.Modbus\obj\Debug\ZFreeGo.MultiSample.Modbus.pdb

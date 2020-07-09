@@ -1,0 +1,8 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <User>
+    <Name>Admin</Name>
+    <PasswordI>abc</PasswordI>
+    <PasswordII>123</PasswordII>
+  </User>
+</NewDataSet>

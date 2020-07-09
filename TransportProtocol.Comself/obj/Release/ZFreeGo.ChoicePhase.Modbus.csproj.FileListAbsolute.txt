@@ -1,0 +1,11 @@
+G:\MyCode\Dotnet\ZFreeGo.ChoisePhase\ZFreeGo.IntelligentControlPlatform.Modbus\obj\Release\ZFreeGo.ChoicePhase.Modbus.csprojResolveAssemblyReference.cache
+F:\MyCode\Dotnet\ZFreeGo.ChoicePhase\ZFreeGo.ChoicePhase.Modbus\bin\Release\ZFreeGo.ChoicePhase.Modbus.dll
+F:\MyCode\Dotnet\ZFreeGo.ChoicePhase\ZFreeGo.ChoicePhase.Modbus\bin\Release\ZFreeGo.ChoicePhase.Modbus.pdb
+F:\MyCode\Dotnet\ZFreeGo.ChoicePhase\ZFreeGo.ChoicePhase.Modbus\obj\Release\ZFreeGo.ChoicePhase.Modbus.csprojResolveAssemblyReference.cache
+F:\MyCode\Dotnet\ZFreeGo.ChoicePhase\ZFreeGo.ChoicePhase.Modbus\obj\Release\ZFreeGo.ChoicePhase.Modbus.dll
+F:\MyCode\Dotnet\ZFreeGo.ChoicePhase\ZFreeGo.ChoicePhase.Modbus\obj\Release\ZFreeGo.ChoicePhase.Modbus.pdb
+J:\MyCode\Dotnet\ZFreeGo.ChoicePhase\ZFreeGo.ChoicePhase.Modbus\bin\Release\ZFreeGo.ChoicePhase.Modbus.dll
+J:\MyCode\Dotnet\ZFreeGo.ChoicePhase\ZFreeGo.ChoicePhase.Modbus\bin\Release\ZFreeGo.ChoicePhase.Modbus.pdb
+J:\MyCode\Dotnet\ZFreeGo.ChoicePhase\ZFreeGo.ChoicePhase.Modbus\obj\Release\ZFreeGo.ChoicePhase.Modbus.csprojResolveAssemblyReference.cache
+J:\MyCode\Dotnet\ZFreeGo.ChoicePhase\ZFreeGo.ChoicePhase.Modbus\obj\Release\ZFreeGo.ChoicePhase.Modbus.dll
+J:\MyCode\Dotnet\ZFreeGo.ChoicePhase\ZFreeGo.ChoicePhase.Modbus\obj\Release\ZFreeGo.ChoicePhase.Modbus.pdb

@@ -1,0 +1,276 @@
+﻿<Window x:Class="ChoicePhase.ControlPlatform.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ignore="http://www.galasoft.ch/ignore"
+        xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+        mc:Ignorable="d ignore"
+        Height="800"
+        Width="1200" 
+        Title="智能终端配置平台"
+        DataContext="{Binding Main, Source={StaticResource Locator}}"  >
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction Command="{Binding LoadDataCommand}" />
+        </i:EventTrigger>
+        <i:EventTrigger EventName="Closing">
+            <i:InvokeCommandAction Command="{Binding ClosingCommand}" />
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+ 
+    <!--<Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Skins/MainSkin.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>-->
+
+    <Grid x:Name="LayoutRoot" >
+        <Grid.ColumnDefinitions >
+            <ColumnDefinition Width="0"></ColumnDefinition>
+            <ColumnDefinition  Width="3*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="5"></RowDefinition>
+            <RowDefinition Height="150"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <DockPanel Grid.Row="1" Grid.Column="0"  Grid.ColumnSpan="2">
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="文件">
+                    <MenuItem Header="打开">
+                        <MenuItem Header="1.txt"></MenuItem>
+                        <MenuItem Header="2.txt"></MenuItem>
+                        <MenuItem Header="3.txt"></MenuItem>
+                    </MenuItem>
+                </MenuItem>
+                <MenuItem Header="编辑">
+                    <MenuItem Header="复制"></MenuItem>
+                    <MenuItem Header="粘贴"></MenuItem>
+                </MenuItem>
+            </Menu>
+
+            <ToolBar DockPanel.Dock="Top" Height="40">
+                <Button Command="{Binding TreeSelectedItemCommand}" CommandParameter="SerialPortConfig">
+                    <DockPanel>
+                        <Image Source="Pictures/config.ico"></Image>
+                        <TextBlock  VerticalAlignment="Center">通讯设置</TextBlock>
+                    </DockPanel>
+                </Button>
+                <Separator></Separator>
+                
+                <Button Command="{Binding TreeSelectedItemCommand }" CommandParameter="MonitorParameter">
+                    <DockPanel>
+                        <Image Source="Pictures/meter.ico"></Image>
+                        <TextBlock  VerticalAlignment="Center">监控参数</TextBlock>
+                    </DockPanel>
+                </Button>
+                <Separator></Separator>
+
+                <Button Command="{Binding TreeSelectedItemCommand}" CommandParameter="SwitchList">
+                    <DockPanel>
+                        <Image Source="Pictures/set.png"></Image>
+                        <TextBlock VerticalAlignment="Center">开关配置</TextBlock>
+                    </DockPanel>
+                </Button>
+                <Separator></Separator>
+
+                <Button Command="{Binding TreeSelectedItemCommand}" CommandParameter="FaultTest" >
+                    <DockPanel>
+                        <Image Source="Pictures/test.png"></Image>
+                        <TextBlock VerticalAlignment="Center">故障测试</TextBlock>
+                    </DockPanel>
+                </Button>
+            </ToolBar>
+        </DockPanel>
+
+
+        <Frame Grid.Column="3" Grid.Row="2" Name="frame"  Source="{Binding ShowUri}" >
+        </Frame>
+
+        <GridSplitter Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Background="LightBlue" Height="5"  HorizontalAlignment="Stretch"
+                      VerticalAlignment = "Center"></GridSplitter>
+        <Grid Grid.Row="4"  Grid.Column="0" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions >
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            
+            <TabControl Grid.Column="0"  >                
+                <TabItem Header="链路数据" Height="23" VerticalAlignment="Top" >
+                    <TextBox Margin="0" Background="AliceBlue"    Name="txtLinkMessage"  IsReadOnly="True"
+                                  VerticalScrollBarVisibility="Visible" TextWrapping="Wrap" MaxWidth="10000" Text="{Binding LinkMessage}" TextChanged="textBox_TextChanged">
+                        <TextBox.ContextMenu>
+                            <ContextMenu StaysOpen="True"  IsEnabled="True">
+                                <MenuItem Header="清空内容" Command="{Binding ClearText}" CommandParameter="LinkMessage" />
+                                <!--<MenuItem Header="到最下端" Command="{Binding ToEnd}"/>-->
+                            </ContextMenu>
+                        </TextBox.ContextMenu>
+                    </TextBox>
+                </TabItem>
+                
+                <TabItem Header="Send">
+                    <TextBox Margin="0" Background="AliceBlue"    IsReadOnly="True" Name="txtRawSendMessage"
+                                  VerticalScrollBarVisibility="Visible" TextWrapping="Wrap" MaxWidth="10000" Text="{Binding RawSendMessage}" TextChanged="textBox_TextChanged">
+                        <TextBox.ContextMenu>
+                            <ContextMenu StaysOpen="True"  IsEnabled="True">
+                                <MenuItem Header="清空内容" Command="{Binding ClearText}" CommandParameter="RawSendMessage" />
+                                <!--<MenuItem Header="到最下端" Command="{Binding ToEnd}"/>-->
+                            </ContextMenu>
+                        </TextBox.ContextMenu>
+                    </TextBox>
+                </TabItem>
+                
+                <TabItem Header="Recive">
+                    <TextBox Margin="0" Background="AliceBlue"   IsReadOnly="True"  Name="txtRawReciveMessage"
+                                  VerticalScrollBarVisibility="Visible" TextWrapping="Wrap" MaxWidth="10000" Text="{Binding RawReciveMessage}" TextChanged="textBox_TextChanged">
+                        <TextBox.ContextMenu>
+                            <ContextMenu StaysOpen="True"  IsEnabled="True">
+                                <MenuItem Header="清空内容" Command="{Binding ClearText}" CommandParameter="RawReciveMessage" />
+                                <!--<MenuItem Header="到最下端" Command="{Binding ToEnd}"/>-->
+                            </ContextMenu>
+                        </TextBox.ContextMenu>
+                    </TextBox>
+                </TabItem>
+                
+                <TabItem Header="异常">
+                    <TextBox Margin="0" Background="AliceBlue"    IsReadOnly="True" Name="txtExceptionMessage"
+                                  VerticalScrollBarVisibility="Visible" TextWrapping="Wrap" MaxWidth="10000" Text="{Binding ExceptionMessage}" TextChanged="textBox_TextChanged">
+                        <TextBox.ContextMenu>
+                            <ContextMenu StaysOpen="True"  IsEnabled="True">
+                                <MenuItem Header="清空内容" Command="{Binding ClearText}" CommandParameter="ExceptionMessage" />
+                                <!--<MenuItem Header="到最下端" Command="{Binding ToEnd}"/>-->
+
+                            </ContextMenu>
+                        </TextBox.ContextMenu>
+                    </TextBox>
+                </TabItem>
+
+                <TabItem Header="测试" DataContext="{Binding  TestParameter}">
+                    
+                    <TextBox Margin="0" Background="AliceBlue"   IsReadOnly="True" 
+                                  VerticalScrollBarVisibility="Visible" TextWrapping="Wrap" MaxWidth="10000" Text="{Binding Tips}" TextChanged="textBox_TextChanged">
+                        <TextBox.ContextMenu>
+                            <ContextMenu StaysOpen="True"  IsEnabled="True">
+                                <MenuItem Header="清空内容" Command="{Binding ClearText}" CommandParameter="Tips" />
+                            </ContextMenu>
+                        </TextBox.ContextMenu>
+                    </TextBox>
+                </TabItem>
+            </TabControl>
+
+            <TabControl Grid.Column="1">
+                <TabItem Header="状态信息" >
+                    <TextBox Margin="0" Background="AliceBlue"    Name="txtStatusMessage" IsReadOnly="True" 
+                                  VerticalScrollBarVisibility="Visible" TextWrapping="Wrap" MaxWidth="10000" Text="{Binding StatusMessage}" TextChanged="textBox_TextChanged">
+                        <TextBox.ContextMenu>
+                            <ContextMenu StaysOpen="True"  IsEnabled="True">
+                                <MenuItem Header="清空内容" Command="{Binding ClearText}" CommandParameter="StatusMessage" />
+                                <!--<MenuItem Header="到最下端" Command="{Binding ToEnd}"/>-->
+                            </ContextMenu>
+                        </TextBox.ContextMenu>
+                    </TextBox>
+                </TabItem>
+            </TabControl>
+        </Grid>
+        
+        <StatusBar Grid.Row="5"  Height="25" Grid.ColumnSpan="2" DataContext="{Binding StatusBar}">
+            <StatusBar.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="120"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="auto"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+                </ItemsPanelTemplate>
+            </StatusBar.ItemsPanel>
+
+            <StatusBarItem Grid.Column="0">
+                <StackPanel Orientation="Horizontal" >
+                    <TextBlock Text="当前用户：" VerticalAlignment="Center" />
+                    <TextBlock Text="{Binding UserName}" Foreground="Black" Name="currentUserName" />
+                    <Separator  HorizontalAlignment="Left"  Margin="7,0,7,0"  VerticalAlignment="Top" Width="20" >
+                        <Separator.LayoutTransform>
+                            <RotateTransform Angle="90" />
+                        </Separator.LayoutTransform>
+                    </Separator>
+                </StackPanel>
+            </StatusBarItem>
+
+            <!--<StatusBarItem  Grid.Column="1" FontFamily="黑体">
+                <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                    <StackPanel Orientation="Horizontal" >
+                        <Ellipse Width="8" Height="8" Fill="{Binding  ComBrush}"></Ellipse>
+                        <TextBlock  Foreground="{Binding  ComBrush}" Text="{Binding ComState}" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <Separator  HorizontalAlignment="Left"  Margin="7,0,7,0"  VerticalAlignment="Top" Width="20" >
+                        <Separator.LayoutTransform>
+                            <RotateTransform Angle="90" />
+                        </Separator.LayoutTransform>
+                    </Separator>
+                    <StackPanel Orientation="Horizontal" >
+                        <Ellipse Width="8" Height="8" Fill="{Binding  DeviceBrush}"></Ellipse>
+                        <TextBlock  Foreground="{Binding  DeviceBrush}" Text="{Binding DeviceState}" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <Separator  HorizontalAlignment="Left"  Margin="7,0,7,0"  VerticalAlignment="Top" Width="20" >
+                        <Separator.LayoutTransform>
+                            <RotateTransform Angle="90" />
+                        </Separator.LayoutTransform>
+                    </Separator>
+
+                    <StackPanel Orientation="Horizontal" >
+                        <Ellipse Width="8" Height="8" Fill="{Binding  PhaseABrush}"></Ellipse>
+                        <TextBlock  Foreground="{Binding  PhaseABrush}" Text="{Binding PhaseA}" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <Separator  HorizontalAlignment="Left"  Margin="7,0,7,0"  VerticalAlignment="Top" Width="20" >
+                        <Separator.LayoutTransform>
+                            <RotateTransform Angle="90" />
+                        </Separator.LayoutTransform>
+                    </Separator>
+                    <StackPanel Orientation="Horizontal"  Visibility="{Binding VisibleB}">
+                        <Ellipse Width="8" Height="8" Fill="{Binding  PhaseBBrush}" ></Ellipse>
+                        <TextBlock  Foreground="{Binding  PhaseBBrush}" Text="{Binding PhaseB}" VerticalAlignment="Center"/>
+                        <Separator  HorizontalAlignment="Left"  Margin="7,0,7,0"  VerticalAlignment="Top" Width="20" >
+                            <Separator.LayoutTransform>
+                                <RotateTransform Angle="90" />
+                            </Separator.LayoutTransform>
+                        </Separator>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Visibility="{Binding VisibleC}">
+                        <Ellipse Width="8" Height="8" Fill="{Binding  PhaseCBrush}"></Ellipse>
+                        <TextBlock  Foreground="{Binding  PhaseCBrush}" Text="{Binding PhaseC}" VerticalAlignment="Center"/>
+                        <Separator  HorizontalAlignment="Left"  Margin="7,0,7,0"  VerticalAlignment="Top" Width="20" >
+                            <Separator.LayoutTransform>
+                                <RotateTransform Angle="90" />
+                            </Separator.LayoutTransform>
+                        </Separator>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" >
+                        <Ellipse Width="8" Height="8" Fill="{Binding  SynBrush}"></Ellipse>
+                        <TextBlock  Foreground="{Binding  SynBrush}" Text="{Binding Syn}" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <Separator  HorizontalAlignment="Left"  Margin="7,0,7,0"  VerticalAlignment="Top" Width="20" >
+                        <Separator.LayoutTransform>
+                            <RotateTransform Angle="90" />
+                        </Separator.LayoutTransform>
+                    </Separator>
+                </StackPanel>
+            </StatusBarItem>-->
+            <StatusBarItem  Grid.Column="2">
+                <StackPanel Orientation="Horizontal" >
+                    <!--<Image  Source="pictures/SOJO.jpg"></Image>-->                  
+                </StackPanel>
+            </StatusBarItem>
+        </StatusBar>
+    </Grid>
+</Window>

@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\Protocol">
+      <UniqueIdentifier>{be708395-cd11-4922-ae1a-5dcd88c27fd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\CallSkin">
+      <UniqueIdentifier>{2744fe76-f192-4ef0-b78a-4af5063679dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Distribution">
+      <UniqueIdentifier>{35d3a20b-aba0-4601-bc57-6ace7680cfb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Components">
+      <UniqueIdentifier>{230f6bbe-f646-46ca-bce0-3a905b5b3608}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Protocol/nanopb">
+      <UniqueIdentifier>{f7124f92-f569-4dac-a9cc-dac4eeff638f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\CallInterface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rtthread.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CallInterface.cpp">
+      <Filter>源文件\CallSkin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Distributed_DTU\RTT_P2P\Project\Components\Src\Buffer.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Distributed_DTU\RTT_P2P\Project\Components\Src\helper.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Distributed_DTU\RTT_P2P\Project\Components\Src\list.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Distributed_DTU\RTT_P2P\Project\DistributionComponents\log.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Distributed_DTU\RTT_P2P\Project\DistributionComponents\log.pb.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Distributed_DTU\RTT_P2P\Project\DistributionComponents\station.pb.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Distributed_DTU\RTT_P2P\Project\Distribution\Src\Router.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Distributed_DTU\RTT_P2P\Project\Protocol\nanopb\pb_common.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Distributed_DTU\RTT_P2P\Project\Protocol\nanopb\pb_decode.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Distributed_DTU\RTT_P2P\Project\Protocol\nanopb\pb_encode.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Distributed_DTU\RTT_P2P\Project\Protocol\Src\CRC16.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Distributed_DTU\RTT_P2P\Project\Protocol\Src\RtuFrame.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Distributed_DTU\RTT_P2P\Project\DistributionComponents\station.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Distribution.def">
+      <Filter>源文件</Filter>
+    </None>
+  </ItemGroup>
+</Project>

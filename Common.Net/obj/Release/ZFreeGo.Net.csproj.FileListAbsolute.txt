@@ -1,0 +1,16 @@
+J:\MyCode\Dotnet\ZFreeGo.Monitor\ZFreeGo.Common.Net\bin\Release\ZFreeGo.Net.dll
+J:\MyCode\Dotnet\ZFreeGo.Monitor\ZFreeGo.Common.Net\bin\Release\ZFreeGo.Net.pdb
+J:\MyCode\Dotnet\ZFreeGo.Monitor\ZFreeGo.Common.Net\obj\Release\ZFreeGo.Net.dll
+J:\MyCode\Dotnet\ZFreeGo.Monitor\ZFreeGo.Common.Net\obj\Release\ZFreeGo.Net.pdb
+F:\MyCode\Dotnet\ZFreeGo.Monitor\ZFreeGo.Common.Net\bin\Release\ZFreeGo.Net.dll
+F:\MyCode\Dotnet\ZFreeGo.Monitor\ZFreeGo.Common.Net\bin\Release\ZFreeGo.Net.pdb
+F:\MyCode\Dotnet\ZFreeGo.Monitor\ZFreeGo.Common.Net\obj\Release\ZFreeGo.Net.csprojResolveAssemblyReference.cache
+F:\MyCode\Dotnet\ZFreeGo.Monitor\ZFreeGo.Common.Net\obj\Release\ZFreeGo.Net.dll
+F:\MyCode\Dotnet\ZFreeGo.Monitor\ZFreeGo.Common.Net\obj\Release\ZFreeGo.Net.pdb
+J:\MyCode\Dotnet\ZFreeGo.Monitor\ZFreeGo.Common.Net\obj\Release\ZFreeGo.Net.csprojResolveAssemblyReference.cache
+E:\project\DistributionDTU\Distribution\ZFreeGo.DistributionDTU\ZFreeGo.Common.Net\bin\Release\ZFreeGo.Net.dll
+E:\project\DistributionDTU\Distribution\ZFreeGo.DistributionDTU\ZFreeGo.Common.Net\bin\Release\ZFreeGo.Net.pdb
+E:\project\DistributionDTU\Distribution\ZFreeGo.DistributionDTU\ZFreeGo.Common.Net\obj\Release\ZFreeGo.Net.csprojAssemblyReference.cache
+E:\project\DistributionDTU\Distribution\ZFreeGo.DistributionDTU\ZFreeGo.Common.Net\obj\Release\ZFreeGo.Net.csproj.CoreCompileInputs.cache
+E:\project\DistributionDTU\Distribution\ZFreeGo.DistributionDTU\ZFreeGo.Common.Net\obj\Release\ZFreeGo.Net.dll
+E:\project\DistributionDTU\Distribution\ZFreeGo.DistributionDTU\ZFreeGo.Common.Net\obj\Release\ZFreeGo.Net.pdb

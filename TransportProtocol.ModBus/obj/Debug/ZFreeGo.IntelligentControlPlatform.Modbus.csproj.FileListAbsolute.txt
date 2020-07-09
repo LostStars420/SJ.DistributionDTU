@@ -1,0 +1,14 @@
+G:\MyCode\WPF\IntelligentRelayControlPlatform\ZFreeGo.IntelligentControlPlatform.Modbus\obj\Debug\ZFreeGo.IntelligentControlPlatform.Modbus.csprojResolveAssemblyReference.cache
+G:\MyCode\WPF\IntelligentRelayControlPlatform\ZFreeGo.IntelligentControlPlatform.Modbus\bin\Debug\ZFreeGo.IntelligentControlPlatform.Modbus.dll
+G:\MyCode\WPF\IntelligentRelayControlPlatform\ZFreeGo.IntelligentControlPlatform.Modbus\bin\Debug\ZFreeGo.IntelligentControlPlatform.Modbus.pdb
+G:\MyCode\WPF\IntelligentRelayControlPlatform\ZFreeGo.IntelligentControlPlatform.Modbus\obj\Debug\ZFreeGo.IntelligentControlPlatform.Modbus.dll
+G:\MyCode\WPF\IntelligentRelayControlPlatform\ZFreeGo.IntelligentControlPlatform.Modbus\obj\Debug\ZFreeGo.IntelligentControlPlatform.Modbus.pdb
+G:\MyCode\Dotnet\IntelligentRelayControlPlatform\ZFreeGo.IntelligentControlPlatform.Modbus\bin\Debug\ZFreeGo.IntelligentControlPlatform.Modbus.dll
+G:\MyCode\Dotnet\IntelligentRelayControlPlatform\ZFreeGo.IntelligentControlPlatform.Modbus\bin\Debug\ZFreeGo.IntelligentControlPlatform.Modbus.pdb
+G:\MyCode\Dotnet\IntelligentRelayControlPlatform\ZFreeGo.IntelligentControlPlatform.Modbus\obj\Debug\ZFreeGo.IntelligentControlPlatform.Modbus.csprojResolveAssemblyReference.cache
+G:\MyCode\Dotnet\IntelligentRelayControlPlatform\ZFreeGo.IntelligentControlPlatform.Modbus\obj\Debug\ZFreeGo.IntelligentControlPlatform.Modbus.dll
+G:\MyCode\Dotnet\IntelligentRelayControlPlatform\ZFreeGo.IntelligentControlPlatform.Modbus\obj\Debug\ZFreeGo.IntelligentControlPlatform.Modbus.pdb
+H:\MyCode\Dotnet\IntelligentRelayControlPlatform\ZFreeGo.IntelligentControlPlatform.Modbus\bin\Debug\ZFreeGo.IntelligentControlPlatform.Modbus.dll
+H:\MyCode\Dotnet\IntelligentRelayControlPlatform\ZFreeGo.IntelligentControlPlatform.Modbus\bin\Debug\ZFreeGo.IntelligentControlPlatform.Modbus.pdb
+H:\MyCode\Dotnet\IntelligentRelayControlPlatform\ZFreeGo.IntelligentControlPlatform.Modbus\obj\Debug\ZFreeGo.IntelligentControlPlatform.Modbus.dll
+H:\MyCode\Dotnet\IntelligentRelayControlPlatform\ZFreeGo.IntelligentControlPlatform.Modbus\obj\Debug\ZFreeGo.IntelligentControlPlatform.Modbus.pdb

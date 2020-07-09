@@ -1,0 +1,12 @@
+E:\project\DistributionDTU\Distribution\ZFreeGo.DistributionDTU\GooseGenerator\bin\Debug\GooseGenerator.dll
+E:\project\DistributionDTU\Distribution\ZFreeGo.DistributionDTU\GooseGenerator\bin\Debug\GooseGenerator.pdb
+E:\project\DistributionDTU\Distribution\ZFreeGo.DistributionDTU\GooseGenerator\obj\Debug\GooseGenerator.csproj.CoreCompileInputs.cache
+E:\project\DistributionDTU\Distribution\ZFreeGo.DistributionDTU\GooseGenerator\obj\Debug\GooseGenerator.dll
+E:\project\DistributionDTU\Distribution\ZFreeGo.DistributionDTU\GooseGenerator\obj\Debug\GooseGenerator.pdb
+E:\project\DistributionDTU\Distribution\ZFreeGo.DistributionDTU\GooseGenerator\obj\Debug\GooseGenerator.csprojAssemblyReference.cache
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\GooseGenerator\bin\Debug\GooseGenerator.dll
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\GooseGenerator\bin\Debug\GooseGenerator.pdb
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\GooseGenerator\obj\Debug\GooseGenerator.csproj.CoreCompileInputs.cache
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\GooseGenerator\obj\Debug\GooseGenerator.dll
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\GooseGenerator\obj\Debug\GooseGenerator.pdb
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\GooseGenerator\obj\Debug\GooseGenerator.csprojAssemblyReference.cache

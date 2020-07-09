@@ -1,0 +1,7 @@
+LIBRARY "distribution"
+
+
+EXPORTS
+
+ProtocolInit @ 1
+ProtocolAnylastDeal @ 2

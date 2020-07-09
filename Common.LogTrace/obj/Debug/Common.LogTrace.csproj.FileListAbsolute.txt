@@ -1,0 +1,10 @@
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\ZFreeGo.Common.LogTrace\obj\Debug\Common.LogTrace.csproj.CoreCompileInputs.cache
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\ZFreeGo.Common.LogTrace\bin\Debug\Common.LogTrace.dll
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\ZFreeGo.Common.LogTrace\bin\Debug\Common.LogTrace.pdb
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\ZFreeGo.Common.LogTrace\obj\Debug\Common.LogTrace.dll
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\ZFreeGo.Common.LogTrace\obj\Debug\Common.LogTrace.pdb
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\Common.LogTrace\bin\Debug\Common.LogTrace.dll
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\Common.LogTrace\bin\Debug\Common.LogTrace.pdb
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\Common.LogTrace\obj\Debug\Common.LogTrace.csproj.CoreCompileInputs.cache
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\Common.LogTrace\obj\Debug\Common.LogTrace.dll
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\Common.LogTrace\obj\Debug\Common.LogTrace.pdb

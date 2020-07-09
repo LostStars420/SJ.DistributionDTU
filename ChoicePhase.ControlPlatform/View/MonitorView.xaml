@@ -1,0 +1,130 @@
+﻿<Page x:Class="ChoicePhase.ControlPlatform.View.MonitorView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+       xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+      mc:Ignorable="d"  ShowsNavigationUI="False"
+      DataContext="{Binding Monitor, Source={StaticResource Locator}}"
+	Title="MonitorView">
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction Command="{Binding LoadDataCommand}" />
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+    <Grid>
+        <Grid.RowDefinitions >
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <StackPanel Margin="3" Orientation="Horizontal" >
+                <Label Margin="3">MAC:</Label>
+
+                <ComboBox MinWidth="60" Margin="3" ItemsSource="{Binding StationNameList}" SelectedIndex="{Binding SelectMacIndex}"></ComboBox>
+                <TextBox MinWidth="60" Margin="3" Text="{Binding MacAddress}" IsReadOnly="True"></TextBox>
+                <Label Margin="3">Start:</Label>
+                <TextBox MinWidth="60" Margin="3" Text="{Binding StartAddress}"></TextBox>
+                <Label Margin="3">End:</Label>
+                <TextBox MinWidth="60" Margin="3" Text="{Binding EndAddress}"></TextBox>
+                <Button Margin="30,3,3,3" Padding="3" CommandParameter="UpdateAll" Command="{Binding UpdateOperate}">更新监控数据</Button>
+
+            </StackPanel>
+        </Grid>
+        <DataGrid Grid.Row="1" Margin="5" AutoGenerateColumns="False"  Name="gridProtectSetPoint" IsReadOnly="{Binding  ReadOnly}" 
+                  SelectedIndex="{Binding SelectedIndex}" CanUserSortColumns="False"  ItemsSource="{Binding UserData}"
+                  HorizontalScrollBarVisibility="Visible" HorizontalAlignment="Stretch" SelectionChanged="gridProtectSetPoint_SelectionChanged" >
+            <!--<DataGrid.RenderTransform>
+                <RotateTransform Angle="90" CenterX="100" CenterY="100"></RotateTransform>
+            </DataGrid.RenderTransform>-->
+
+            <i:Interaction.Triggers>
+
+                <i:EventTrigger EventName="Unloaded">
+                    <i:InvokeCommandAction Command="{Binding  UnloadedCommand}"  />
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+
+            <DataGrid.ContextMenu>
+                <ContextMenu Name="dgmenu" StaysOpen="True"  >
+                    <MenuItem Header="使能设置" CommandParameter="SetNewValue" Command="{Binding DataGridMenumSelected}" VerticalAlignment="Center">
+                        <CheckBox Margin="3" Padding="3" VerticalAlignment="Center" VerticalContentAlignment="Center"  IsChecked="{Binding FixCheck}"   >修改</CheckBox>
+                    </MenuItem>
+                    <MenuItem Header="重新载入表格" CommandParameter="Reload" Command="{Binding DataGridMenumSelected}"/>
+                    <Separator></Separator>
+                    <MenuItem Header="保存表格到数据库"  CommandParameter="Save" Command="{Binding DataGridMenumSelected}"/>
+                    <Separator></Separator>
+                    <MenuItem Header="选择行之上插入新行"  CommandParameter="AddUp" Command="{Binding DataGridMenumSelected}"/>
+                    <Separator></Separator>
+                    <MenuItem Header="选择行之下插入新行"  CommandParameter="AddDown" Command="{Binding DataGridMenumSelected}"/>
+                    <Separator></Separator>
+                    <MenuItem Header="删除选中行"  CommandParameter="DeleteSelect" Command="{Binding DataGridMenumSelected}"/>
+                </ContextMenu>
+            </DataGrid.ContextMenu>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID"  Width="50" Binding="{Binding ID, StringFormat={}{0:X2}}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Time"    Width="Auto" Binding="{Binding UpadeTime}"></DataGridTextColumn>
+                <DataGridTextColumn Header="开关类型"    Width="Auto" Binding="{Binding Type}"></DataGridTextColumn>
+                <DataGridTextColumn Header="合分状态"   Width="Auto" Binding="{Binding State}"></DataGridTextColumn>
+                <DataGridTextColumn Header="邻居数量"    MinWidth="60" Binding="{Binding NeighbourCount}"></DataGridTextColumn>
+                <DataGridTextColumn Header="邻居集合"    Width="Auto" Binding="{Binding NeighbourCollect}"></DataGridTextColumn>
+                <DataGridTextColumn Header="操作类型"    Width="Auto" Binding="{Binding Operate}"></DataGridTextColumn>
+                <DataGridTextColumn Header="超时类型"    Width="Auto" Binding="{Binding OverTime}"></DataGridTextColumn>
+
+                <DataGridTextColumn Header="移除情况"    Width="Auto" Binding="{Binding RemovalType}"></DataGridTextColumn>
+                <DataGridTextColumn Header="隔离情况"    Width="Auto" Binding="{Binding InsulateType}"></DataGridTextColumn>
+                <DataGridTextColumn Header="故障状态"    Width="Auto" Binding="{Binding FaultState}"></DataGridTextColumn>
+                <DataGridTextColumn Header="边缘状态"    Width="Auto" Binding="{Binding IsFaultEdgeConnected}"></DataGridTextColumn>
+                <DataGridTextColumn Header="区域索引"    Width="Auto" Binding="{Binding IndexArea}"></DataGridTextColumn>
+                <DataGridTextColumn Header="区域是否存在"    Width="Auto" Binding="{Binding IsExitArea}"></DataGridTextColumn>
+                <DataGridTextColumn Header="收集完整 "    Width="Auto" Binding="{Binding IsGather}"></DataGridTextColumn>
+
+                <!--配电区域-->
+                <DataGridTextColumn Header="参考开关"    Width="Auto" Binding="{Binding SwitchRef, StringFormat={}{0:X2}}"></DataGridTextColumn>
+                <DataGridTextColumn Header="区域数量"    Width="Auto" Binding="{Binding AreaCount}"></DataGridTextColumn>
+                <DataGridTextColumn Header="完成与否"    Width="Auto" Binding="{Binding IsComplted}"></DataGridTextColumn>
+                <DataGridTextColumn Header="收集完成"    Width="Auto" Binding="{Binding IsGatherCompleted}"></DataGridTextColumn>
+                <DataGridTextColumn Header="计算完成"    Width="Auto" Binding="{Binding IsGatherCalculateCompleted}"></DataGridTextColumn>
+                <DataGridTextColumn Header="已经存在故障"    Width="Auto" Binding="{Binding IsAlreayExitedFault}"></DataGridTextColumn>
+                <DataGridTextColumn Header="隔离失败"    Width="Auto" Binding="{Binding IsExitedInsulateFailure}"></DataGridTextColumn>
+
+                <!--<配电区域合集>-->
+                <DataGridTextColumn Header="配电区域信息"    Width="Auto" Binding="{Binding PowerAreaMessage}"></DataGridTextColumn>
+
+                <!--联络开关-->
+                <DataGridTextColumn Header="转供电交互"    Width="Auto" Binding="{Binding TransferCode}"></DataGridTextColumn>
+                <DataGridTextColumn Header="路径1"    Width="Auto" Binding="{Binding Path1}"></DataGridTextColumn>
+                <DataGridTextColumn Header="路径2"    Width="Auto" Binding="{Binding Path2}"></DataGridTextColumn>
+                <DataGridTextColumn Header="数量"    Width="Auto" Binding="{Binding Count}"></DataGridTextColumn>
+                <DataGridTextColumn Header="是否为联络"    Width="Auto" Binding="{Binding IsConnect}"></DataGridTextColumn>
+
+
+                <!--故障切除信息-->
+                <DataGridTextColumn Header="开关ID"    Width="Auto" Binding="{Binding SwitchPropertyID, StringFormat={}{0:X2}}"></DataGridTextColumn>
+                <DataGridTextColumn Header="LasteState"    Width="Auto" Binding="{Binding LastState}"></DataGridTextColumn>
+                <DataGridTextColumn Header="NextState"    Width="Auto" Binding="{Binding NextState}"></DataGridTextColumn>
+                <DataGridTextColumn Header="IsRun"    Width="Auto" Binding="{Binding IsRun}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Step"    Width="Auto" Binding="{Binding Step}"></DataGridTextColumn>
+                <DataGridTextColumn Header="StartTime"    Width="Auto" Binding="{Binding StartTime}"></DataGridTextColumn>
+                <DataGridTextColumn Header="LimitTime"    Width="Auto" Binding="{Binding LimitTime}"></DataGridTextColumn>
+                <DataGridTextColumn Header="T1"    Width="Auto" Binding="{Binding T1}"></DataGridTextColumn>
+                <DataGridTextColumn Header="T2"    Width="Auto" Binding="{Binding T2}"></DataGridTextColumn>
+                <DataGridTextColumn Header="T3"    Width="Auto" Binding="{Binding T3}"></DataGridTextColumn>
+                <DataGridTextColumn Header="T4"    Width="Auto" Binding="{Binding T4}"></DataGridTextColumn>
+                <DataGridTextColumn Header="T5"    Width="Auto" Binding="{Binding T5}"></DataGridTextColumn>
+                <DataGridTextColumn Header="分闸检测时间"    Width="Auto" Binding="{Binding CheckOpenTime}"></DataGridTextColumn>
+                <DataGridTextColumn Header="备份时间"    Width="Auto" Binding="{Binding CheckBackupTime}"></DataGridTextColumn>
+                <DataGridTextColumn Header="拒动时间"    Width="Auto" Binding="{Binding RejectTime}"></DataGridTextColumn>
+                <DataGridTextColumn Header="接收切除成功时间"    Width="Auto" Binding="{Binding RreciveRemovalSuccessTime}"></DataGridTextColumn>
+                <DataGridTextColumn Header="接收联络信息时间"    Width="Auto" Binding="{Binding ReciveConnectTime}"></DataGridTextColumn>
+                <DataGridTextColumn Header="IsCheckPass"    Width="Auto" Binding="{Binding IsCheckPass}"></DataGridTextColumn>
+
+                <!--connect_path-->
+                <DataGridTextColumn Header="联络路径信息"    Width="Auto" Binding="{Binding ConnectPathMessage}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Page>

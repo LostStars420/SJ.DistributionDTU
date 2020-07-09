@@ -1,0 +1,17 @@
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\ZFreeGo.TransportProtocol.ModBus\obj\Debug\TransportProtocol.ModBus.csproj.CoreCompileInputs.cache
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\ZFreeGo.TransportProtocol.ModBus\obj\Debug\TransportProtocol.ModBus.csproj.CopyComplete
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\ZFreeGo.TransportProtocol.ModBus\bin\Debug\ChoicePhase.Modbus.dll
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\ZFreeGo.TransportProtocol.ModBus\bin\Debug\ChoicePhase.Modbus.pdb
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\ZFreeGo.TransportProtocol.ModBus\bin\Debug\Common.LogTrace.dll
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\ZFreeGo.TransportProtocol.ModBus\bin\Debug\Common.LogTrace.pdb
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\ZFreeGo.TransportProtocol.ModBus\obj\Debug\ChoicePhase.Modbus.dll
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\ZFreeGo.TransportProtocol.ModBus\obj\Debug\ChoicePhase.Modbus.pdb
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\TransportProtocol.ModBus\bin\Debug\ChoicePhase.Modbus.dll
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\TransportProtocol.ModBus\bin\Debug\ChoicePhase.Modbus.pdb
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\TransportProtocol.ModBus\bin\Debug\Common.LogTrace.dll
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\TransportProtocol.ModBus\bin\Debug\Common.LogTrace.pdb
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\TransportProtocol.ModBus\obj\Debug\TransportProtocol.ModBus.csprojAssemblyReference.cache
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\TransportProtocol.ModBus\obj\Debug\TransportProtocol.ModBus.csproj.CoreCompileInputs.cache
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\TransportProtocol.ModBus\obj\Debug\TransportProtocol.ModBus.csproj.CopyComplete
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\TransportProtocol.ModBus\obj\Debug\ChoicePhase.Modbus.dll
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\TransportProtocol.ModBus\obj\Debug\ChoicePhase.Modbus.pdb

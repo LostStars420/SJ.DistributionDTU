@@ -1,0 +1,5 @@
+LogTrace Error: 0 :       [2018年9月13日15:30:47]:    在 ZFreeGo.TransportProtocol.Comself.ProtocolAnylastStatic.ProtocolInit(UInt16 local_address)
+   在 ZFreeGo.TransportProtocol.Comself.ProtocolAnylast..ctor(UInt16 addres) 位置 E:\project\DistributionTwo\Distribution\ZFreeGo.DistributionDTU\ZFreeGo.TransportProtocol.Comself\ImportFunction.cs:行号 154
+   在 ZFreeGo.TransportProtocol.Comself.RtuServer..ctor(UInt16 addr, Int32 overTime, Func`2 sendDataDelegate, Action`1 exceptionDelegate) 位置 E:\project\DistributionTwo\Distribution\ZFreeGo.DistributionDTU\ZFreeGo.TransportProtocol.Comself\ReciveRtuServer.cs:行号 97
+   在 ZFreeGo.TransportProtocol.Comself.RtuServer..ctor(UInt16 addr, Int32 overTime, Func`2 sendDataDelegate, Func`4 udpSendDataDelegate, Int32 port, Action`1 exceptionDelegate) 位置 E:\project\DistributionTwo\Distribution\ZFreeGo.DistributionDTU\ZFreeGo.TransportProtocol.Comself\ReciveRtuServer.cs:行号 108
+   在 ZFreeGo.ChoicePhase.PlatformModel.PlatformModelServer..ctor() 位置 E:\project\DistributionTwo\Distribution\ZFreeGo.DistributionDTU\ZFreeGo.ChoicePhase.PlatformModel\PlatformModelServer.cs:行号 190

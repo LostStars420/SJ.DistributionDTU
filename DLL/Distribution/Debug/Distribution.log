@@ -1,0 +1,89 @@
+﻿  Buffer.c
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\distribution\inc\extern_interface.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\components\src\buffer.c(36): warning C4028: 形参 3 与声明不同
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\components\src\buffer.c(76): warning C4013: “printf”未定义；假设外部返回 int
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\components\src\buffer.c(114): warning C4028: 形参 3 与声明不同
+  helper.c
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\components\inc\helper.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  list.c
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\components\inc\list.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\distribution\inc\extern_interface.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  log.c
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\distribution\inc\distribution_def.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\distribution\inc\distribution_enum.h(14): warning C4005: “NULL”: 宏重定义
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.15.26726\include\vcruntime.h(222): note: 参见“NULL”的前一个定义
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\components\inc\list.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\components\inc\helper.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\distribution\inc\parse_implement.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\protocol\inc\datagram.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\distribution\inc\extern_interface.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\distributioncomponents\log.c(76): warning C4267: “初始化”: 从“size_t”转换到“uint8_t”，可能丢失数据
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\distributioncomponents\log.c(128): warning C4267: “初始化”: 从“size_t”转换到“uint16_t”，可能丢失数据
+  log.pb.c
+  station.c
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\distributioncomponents\station.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\distribution\inc\distribution_def.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\distribution\inc\distribution_enum.h(14): warning C4005: “NULL”: 宏重定义
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.15.26726\include\vcruntime.h(222): note: 参见“NULL”的前一个定义
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\components\inc\list.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\components\inc\helper.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\distribution\inc\distribution_config.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\distribution\inc\parse_implement.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\protocol\inc\datagram.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\distribution\inc\extern_interface.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\distributioncomponents\station.c(56): warning C4244: “函数”: 从“long”转换到“uint16_t”，可能丢失数据
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\distributioncomponents\station.c(57): warning C4244: “函数”: 从“long”转换到“uint16_t”，可能丢失数据
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\distributioncomponents\station.c(66): warning C4244: “函数”: 从“long”转换到“uint16_t”，可能丢失数据
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\distributioncomponents\station.c(71): warning C4244: “函数”: 从“long”转换到“uint16_t”，可能丢失数据
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\distributioncomponents\station.c(92): warning C4244: “函数”: 从“long”转换到“uint16_t”，可能丢失数据
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\distributioncomponents\station.c(93): warning C4244: “函数”: 从“long”转换到“uint16_t”，可能丢失数据
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\distributioncomponents\station.c(143): warning C4267: “初始化”: 从“size_t”转换到“uint16_t”，可能丢失数据
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\distributioncomponents\station.c(533): warning C4267: “初始化”: 从“size_t”转换到“uint16_t”，可能丢失数据
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\distributioncomponents\station.c(592): warning C4244: “函数”: 从“long”转换到“uint16_t”，可能丢失数据
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\distributioncomponents\station.c(593): warning C4244: “函数”: 从“long”转换到“uint16_t”，可能丢失数据
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\distributioncomponents\station.c(622): warning C4244: “函数”: 从“long”转换到“uint16_t”，可能丢失数据
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\distributioncomponents\station.c(626): warning C4244: “函数”: 从“long”转换到“uint16_t”，可能丢失数据
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\distributioncomponents\station.c(628): warning C4244: “函数”: 从“long”转换到“uint16_t”，可能丢失数据
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\distributioncomponents\station.c(629): warning C4244: “函数”: 从“long”转换到“uint16_t”，可能丢失数据
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\distributioncomponents\station.c(633): warning C4244: “函数”: 从“long”转换到“uint16_t”，可能丢失数据
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\distributioncomponents\station.c(654): warning C4244: “函数”: 从“long”转换到“uint16_t”，可能丢失数据
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\distributioncomponents\station.c(742): warning C4244: “函数”: 从“long”转换到“uint16_t”，可能丢失数据
+  station.pb.c
+  Router.c
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\distribution\inc\distribution_def.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\distribution\inc\distribution_enum.h(14): warning C4005: “NULL”: 宏重定义
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.15.26726\include\vcruntime.h(222): note: 参见“NULL”的前一个定义
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\components\inc\list.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\components\inc\helper.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\distribution\inc\extern_interface.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\distribution\src\router.c(80): warning C4013: “memset”未定义；假设外部返回 int
+  pb_common.c
+  pb_decode.c
+  pb_encode.c
+  CRC16.c
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\protocol\src\crc16.c(50): warning C4028: 形参 2 与声明不同
+  RtuFrame.c
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\distribution\inc\distribution_def.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\distribution\inc\distribution_enum.h(14): warning C4005: “NULL”: 宏重定义
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.15.26726\include\vcruntime.h(222): note: 参见“NULL”的前一个定义
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\components\inc\list.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\components\inc\helper.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\distribution\inc\extern_interface.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\distribution\inc\distribution_config.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\protocol\src\rtuframe.c(64): warning C4244: “return”: 从“uint16_t”转换到“uint8_t”，可能丢失数据
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\protocol\src\rtuframe.c(162): warning C4244: “return”: 从“uint16_t”转换到“uint8_t”，可能丢失数据
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\protocol\src\rtuframe.c(181): warning C4554: “>>”: 检查运算符优先级是否存在的可能的错误；使用括号阐明优先级
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\protocol\src\rtuframe.c(182): warning C4554: “>>”: 检查运算符优先级是否存在的可能的错误；使用括号阐明优先级
+  stdafx.c
+  正在生成代码...
+  dllmain.c
+  CallInterface.cpp
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\distribution\inc\distribution_def.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\components\inc\list.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\components\inc\helper.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\distribution\inc\parse_implement.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\protocol\inc\datagram.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\project\distributiondtu\distribution\distributed_dtu\rtt_p2p\project\distribution\inc\extern_interface.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\project\distributiondtu\distribution\zfreego.distributiondtu\dll\distribution\source\callinterface.cpp(170): warning C4715: “ParseLogMessage”: 不是所有的控件路径都返回值
+    正在创建库 E:\project\DistributionDTU\Distribution\ZFreeGo.DistributionDTU\Debug\Distribution.lib 和对象 E:\project\DistributionDTU\Distribution\ZFreeGo.DistributionDTU\Debug\Distribution.exp
+  Distribution.vcxproj -> E:\project\DistributionDTU\Distribution\ZFreeGo.DistributionDTU\Debug\Distribution.dll

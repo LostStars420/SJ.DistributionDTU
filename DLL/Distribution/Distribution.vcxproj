@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D046C33E-4211-4CE8-A81B-FF3AB56C2546}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Distribution</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(ProjectDir)source\Distribution\Inc;$(ProjectDir)source\Components\Inc;$(ProjectDir)source\Protocol\Inc;$(IncludePath)</IncludePath>
+    <SourcePath>.\source;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(ProjectDir)source\Distribution\Inc;$(ProjectDir)source\Components\Inc;$(ProjectDir)source\Protocol\Inc;$(IncludePath)</IncludePath>
+    <SourcePath>.\source;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;DISTRIBUTION_EXPORTS;%(PreprocessorDefinitions);MSVC;DLL_MODE</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>E:\project\DistributionDTU\Distribution\Distributed_DTU\RTT_P2P\Project\DistributionComponents;E:\project\DistributionDTU\Distribution\Distributed_DTU\RTT_P2P\Project\Distribution\Inc;E:\project\DistributionTwo\Distribution\Distributed_DTU\RTT_P2P\Project\DistributionApp;E:\project\DistributionDTU\Distribution\Distributed_DTU\RTT_P2P\Project\Protocol\nanopb;E:\project\DistributionDTU\Distribution\ZFreeGo.DistributionDTU\DLL\Distribution;E:\project\DistributionDTU\Distribution\ZFreeGo.DistributionDTU\DLL\Distribution\source;E:\project\DistributionDTU\Distribution\Distributed_DTU\RTT_P2P\Project\Protocol\Inc;E:\project\DistributionDTU\Distribution\Distributed_DTU\RTT_P2P\Project\Components\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>Distribution.def</ModuleDefinitionFile>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_USRDLL;DISTRIBUTION_EXPORTS;%(PreprocessorDefinitions);MSVC;DLL_MODE</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>E:\project\DistributionTwo\Distribution\Distributed_DTU\RTT_P2P\Project\DistributionComponents;E:\project\DistributionTwo\Distribution\Distributed_DTU\RTT_P2P\Project\Distribution\Inc;E:\project\DistributionTwo\Distribution\Distributed_DTU\RTT_P2P\Project\DistributionApp;E:\project\DistributionTwo\Distribution\Distributed_DTU\RTT_P2P\Project\Protocol\nanopb;E:\project\DistributionTwo\Distribution\ZFreeGo.DistributionDTU\DLL\Distribution;E:\project\DistributionTwo\Distribution\ZFreeGo.DistributionDTU\DLL\Distribution\source;E:\project\DistributionTwo\Distribution\Distributed_DTU\RTT_P2P\Project\Protocol\Inc;E:\project\DistributionTwo\Distribution\Distributed_DTU\RTT_P2P\Project\Components\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>Distribution.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;DISTRIBUTION_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>J:\MyCode\ProjectCode\DistributionDTU\ZFreeGo.DistributionDTU\DLL\Distribution;J:\MyCode\ProjectCode\DistributionDTU\ZFreeGo.DistributionDTU\DLL\Distribution\source;J:\MyCode\ProjectCode\DistributionDTU\RTT_P2P\Project\Protocol\Inc;J:\MyCode\ProjectCode\DistributionDTU\RTT_P2P\Project\Distribution\Inc;J:\MyCode\ProjectCode\DistributionDTU\RTT_P2P\Project\Components\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)\source\Protocol\Src;$(ProjectDir)\source\Distribution\Src;$(ProjectDir)\source\Components\Src;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>Distribution.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_USRDLL;DISTRIBUTION_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>J:\MyCode\ProjectCode\DistributionDTU\ZFreeGo.DistributionDTU\DLL\Distribution;J:\MyCode\ProjectCode\DistributionDTU\ZFreeGo.DistributionDTU\DLL\Distribution\source;J:\MyCode\ProjectCode\DistributionDTU\RTT_P2P\Project\Protocol\Inc;J:\MyCode\ProjectCode\DistributionDTU\RTT_P2P\Project\Distribution\Inc;J:\MyCode\ProjectCode\DistributionDTU\RTT_P2P\Project\Components\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)\source\Protocol\Src;$(ProjectDir)\source\Distribution\Src;$(ProjectDir)\source\Components\Src;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>Distribution.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\CallInterface.h" />
+    <ClInclude Include="source\rtthread.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Distributed_DTU\RTT_P2P\Project\Components\Src\Buffer.c" />
+    <ClCompile Include="..\..\..\Distributed_DTU\RTT_P2P\Project\Components\Src\helper.c" />
+    <ClCompile Include="..\..\..\Distributed_DTU\RTT_P2P\Project\Components\Src\list.c" />
+    <ClCompile Include="..\..\..\Distributed_DTU\RTT_P2P\Project\DistributionComponents\log.c" />
+    <ClCompile Include="..\..\..\Distributed_DTU\RTT_P2P\Project\DistributionComponents\log.pb.c" />
+    <ClCompile Include="..\..\..\Distributed_DTU\RTT_P2P\Project\DistributionComponents\station.c" />
+    <ClCompile Include="..\..\..\Distributed_DTU\RTT_P2P\Project\DistributionComponents\station.pb.c" />
+    <ClCompile Include="..\..\..\Distributed_DTU\RTT_P2P\Project\Distribution\Src\Router.c" />
+    <ClCompile Include="..\..\..\Distributed_DTU\RTT_P2P\Project\Protocol\nanopb\pb_common.c" />
+    <ClCompile Include="..\..\..\Distributed_DTU\RTT_P2P\Project\Protocol\nanopb\pb_decode.c" />
+    <ClCompile Include="..\..\..\Distributed_DTU\RTT_P2P\Project\Protocol\nanopb\pb_encode.c" />
+    <ClCompile Include="..\..\..\Distributed_DTU\RTT_P2P\Project\Protocol\Src\CRC16.c" />
+    <ClCompile Include="..\..\..\Distributed_DTU\RTT_P2P\Project\Protocol\Src\RtuFrame.c" />
+    <ClCompile Include="dllmain.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="source\CallInterface.cpp" />
+    <ClCompile Include="stdafx.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Distribution.def" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

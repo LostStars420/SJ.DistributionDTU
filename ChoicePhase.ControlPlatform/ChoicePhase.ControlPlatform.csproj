@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DE5E1E74-7836-4775-AA89-6C4607DB7EA0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ChoicePhase.ControlPlatform</RootNamespace>
+    <AssemblyName>ChoicePhase.ControlPlatform</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>dcsico.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GalaSoft.MvvmLight, Version=5.2.0.37223, Culture=neutral, PublicKeyToken=0e453835af4ee6ce, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.2.0.0\lib\net40\GalaSoft.MvvmLight.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Extras, Version=5.2.0.37224, Culture=neutral, PublicKeyToken=f46ff315b1088208, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.2.0.0\lib\net40\GalaSoft.MvvmLight.Extras.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="protobuf-net">
+      <HintPath>..\lib\protobuf\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.2.0.0\lib\net40\System.Windows.Interactivity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="FaultTest.cs" />
+    <Compile Include="ViewModel\CommunicationViewModel.cs" />
+    <Compile Include="ViewModel\FaultTestViewModel.cs" />
+    <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="ViewModel\MonitorViewModel.cs" />
+    <Compile Include="ViewModel\OptionConfigUIViewModel.cs" />
+    <Compile Include="ViewModel\SwitchListViewModel.cs" />
+    <Compile Include="ViewModel\ViewModelLocator.cs" />
+    <Compile Include="View\CommunicationView.xaml.cs">
+      <DependentUpon>CommunicationView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\FaultTestView.xaml.cs">
+      <DependentUpon>FaultTestView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MonitorView.xaml.cs">
+      <DependentUpon>MonitorView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\OptionConfigUI.xaml.cs">
+      <DependentUpon>OptionConfigUI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SwitchListView.xaml.cs">
+      <DependentUpon>SwitchListView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XmlOperation.cs" />
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Skins\MainSkin.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\CommunicationView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\FaultTestView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MonitorView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\OptionConfigUI.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\SwitchListView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ChoicePhase.PlatformModel\ChoicePhase.PlatformModel.csproj">
+      <Project>{c6d3acac-470c-4dc7-a924-57f40cfedb95}</Project>
+      <Name>ChoicePhase.PlatformModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GooseGenerator\GooseGenerator.csproj">
+      <Project>{bab06f0e-d321-49f9-b9a3-0d6cd9201e5b}</Project>
+      <Name>GooseGenerator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ChoicePhase.DeviceNet\ChoicePhase.DeviceNet.csproj">
+      <Project>{653fbee0-bf21-4288-8c68-0d3d49d685f1}</Project>
+      <Name>ChoicePhase.DeviceNet</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.LogTrace\Common.LogTrace.csproj">
+      <Project>{b89398a0-0f99-4fb9-bf91-3e4d030b427d}</Project>
+      <Name>Common.LogTrace</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.Net\Net.csproj">
+      <Project>{2c0b038a-4065-4628-81ab-13b750ed8bee}</Project>
+      <Name>Net</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{6712157b-7bdf-472f-b4f2-89113dd0aee6}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Protocol.DistributionControl\Protocol.DistributionControl.csproj">
+      <Project>{de0c028d-9ecc-48e2-bc5e-9e95e817c54e}</Project>
+      <Name>Protocol.DistributionControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TransportProtocol.Comself\TransportProtocol.Comself.csproj">
+      <Project>{daf5830a-1d1c-4d99-95c3-21430bad1e65}</Project>
+      <Name>TransportProtocol.Comself</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TransportProtocol.ModBus\TransportProtocol.ModBus.csproj">
+      <Project>{201f117c-a205-4b77-92b3-08780a6aa754}</Project>
+      <Name>TransportProtocol.ModBus</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UdpDebugMonitor\UdpDebugMonitor.csproj">
+      <Project>{1bfb989a-dbfb-4e01-93d8-8bdea6270f9c}</Project>
+      <Name>UdpDebugMonitor</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\064.ico" />
+    <Resource Include="Pictures\sj1.ico" />
+    <Resource Include="Pictures\sojo-b.jpg" />
+    <Resource Include="Pictures\sojo-c.jpg" />
+    <Resource Include="Pictures\SOJO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\off.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="le.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ICO\off.ico" />
+    <Resource Include="ICO\on.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ICO\off1.png" />
+    <Resource Include="ICO\on1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\config.ico" />
+    <Resource Include="Pictures\config.png" />
+    <Resource Include="Pictures\le.ico" />
+    <Resource Include="Pictures\le.png" />
+    <Resource Include="Pictures\manual.ico" />
+    <Resource Include="Pictures\manual.png" />
+    <Resource Include="Pictures\red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\set.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\meter.ico" />
+    <Resource Include="Pictures\meter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\dtuico.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\test.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="dcsico.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

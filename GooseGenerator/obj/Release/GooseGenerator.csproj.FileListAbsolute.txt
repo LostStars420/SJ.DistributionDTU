@@ -1,0 +1,5 @@
+E:\project\DistributionDTU\Distribution\ZFreeGo.DistributionDTU\GooseGenerator\bin\Release\GooseGenerator.dll
+E:\project\DistributionDTU\Distribution\ZFreeGo.DistributionDTU\GooseGenerator\bin\Release\GooseGenerator.pdb
+E:\project\DistributionDTU\Distribution\ZFreeGo.DistributionDTU\GooseGenerator\obj\Release\GooseGenerator.csproj.CoreCompileInputs.cache
+E:\project\DistributionDTU\Distribution\ZFreeGo.DistributionDTU\GooseGenerator\obj\Release\GooseGenerator.dll
+E:\project\DistributionDTU\Distribution\ZFreeGo.DistributionDTU\GooseGenerator\obj\Release\GooseGenerator.pdb

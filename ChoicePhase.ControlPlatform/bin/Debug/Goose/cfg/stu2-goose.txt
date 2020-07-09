@@ -1,0 +1,184 @@
+[GOOSE Tx]
+numGoCb           = 1
+[GoCB1]
+GoCBRef           = STU42PIGO/LLN0$GO$gocb0
+AppID             = STU42PIGO/LLN0$GO$gocb0
+DatSet            = STU42PIGO/LLN0$dsGOOSE0
+ConfRev           = 1
+numDatSetEntries  = 5
+
+[DstAddr]
+Addr              = 01-0C-CD-01-00-22
+Priority          = 4
+VID               = 1
+Appid             = 42
+MinTime           = 2
+MaxTime           = 6000
+
+[FCDA1]
+Ref               = STU42PIGO/PTRC1$ST$Tr$general
+Type              = Bool
+InVarName         = LD0/GGIO17$Ind1$stVal
+ACT               = 0
+
+[FCDA2]
+Ref               = STU42PIGO/PTRC2$ST$Tr$general
+Type              = Bool
+InVarName         = LD0/GGIO17$Ind2$stVal
+ACT               = 0
+
+[FCDA3]
+Ref               = STU42PIGO/PTRC3$ST$Tr$general
+Type              = Bool
+InVarName         = LD0/GGIO17$Ind3$stVal
+ACT               = 0
+
+[FCDA4]
+Ref               = STU42PIGO/PTRC4$ST$Tr$general
+Type              = Bool
+InVarName         = LD0/GGIO17$Ind4$stVal
+ACT               = 0
+
+[FCDA5]
+Ref               = STU42PIGO/PTRC5$ST$Tr$general
+Type              = Bool
+InVarName         = LD0/GGIO17$Ind5$stVal
+ACT               = 0
+
+
+[GOOSE Rx]
+numGoCb               = 3
+numInput              = 15
+[GoCB1]
+Addr                = 01-0C-CD-01-00-21
+Appid               = 41
+GoCBRef             = STU1PIGO/LLN0$GO$gocb0
+AppID               = STU1PIGO/LLN0$GO$gocb0
+DatSet              = STU1PIGO/LLN0$dsGOOSE0
+ConfRev             = 1
+numDatSetEntries    = 5
+
+[GoCB2]
+Addr                = 01-0C-CD-03-00-43
+Appid               = 1043
+GoCBRef             = CTT43PIGO/LLN0$GO$gocb0
+AppID               = CTT43PIGO/LLN0$GO$gocb0
+DatSet              = CTT43PIGO/LLN0$dsGOOSE0
+ConfRev             = 1
+numDatSetEntries    = 5
+
+[GoCB3]
+Addr                = 01-0C-CD-01-00-32
+Appid               = 1044
+GoCBRef             = CPU32PIGO/LLN0$GO$gocb0
+AppID               = CPU32PIGO/LLN0$GO$gocb0
+DatSet              = CPU32PIGO/LLN0$dsGOOSE0
+ConfRev             = 1
+numDatSetEntries    = 5
+
+[INPUT1]
+GoCbIndex           = 1
+GoCbEntryIndex      = 1
+Ref                 = STU1LD0/GGIO17.ST.Ind1.stVal
+Type                = Bool
+OutVarName          = PIGO/GOINGGIO1.SPCS01.stVal
+
+[INPUT2]
+GoCbIndex           = 1
+GoCbEntryIndex      = 2
+Ref                 = STU1LD0/GGIO17.ST.Ind2.stVal
+Type                = Bool
+OutVarName          = PIGO/GOINGGIO1.SPCS02.stVal
+
+[INPUT3]
+GoCbIndex           = 1
+GoCbEntryIndex      = 3
+Ref                 = STU1LD0/GGIO17.ST.Ind3.stVal
+Type                = Bool
+OutVarName          = PIGO/GOINGGIO1.SPCS03.stVal
+
+[INPUT4]
+GoCbIndex           = 1
+GoCbEntryIndex      = 4
+Ref                 = STU1LD0/GGIO17.ST.Ind4.stVal
+Type                = Bool
+OutVarName          = PIGO/GOINGGIO1.SPCS04.stVal
+
+[INPUT5]
+GoCbIndex           = 1
+GoCbEntryIndex      = 5
+Ref                 = STU1LD0/GGIO17.ST.Ind5.stVal
+Type                = Bool
+OutVarName          = PIGO/GOINGGIO1.SPCS05.stVal
+
+[INPUT6]
+GoCbIndex           = 2
+GoCbEntryIndex      = 1
+Ref                 = CTT43LD0/GGIO17.ST.Ind1.stVal
+Type                = Bool
+OutVarName          = PIGO/GOINGGIO1.SPCS06.stVal
+
+[INPUT7]
+GoCbIndex           = 2
+GoCbEntryIndex      = 2
+Ref                 = CTT43LD0/GGIO17.ST.Ind2.stVal
+Type                = Bool
+OutVarName          = PIGO/GOINGGIO1.SPCS07.stVal
+
+[INPUT8]
+GoCbIndex           = 2
+GoCbEntryIndex      = 3
+Ref                 = CTT43LD0/GGIO17.ST.Ind3.stVal
+Type                = Bool
+OutVarName          = PIGO/GOINGGIO1.SPCS08.stVal
+
+[INPUT9]
+GoCbIndex           = 2
+GoCbEntryIndex      = 4
+Ref                 = CTT43LD0/GGIO17.ST.Ind4.stVal
+Type                = Bool
+OutVarName          = PIGO/GOINGGIO1.SPCS09.stVal
+
+[INPUT10]
+GoCbIndex           = 2
+GoCbEntryIndex      = 5
+Ref                 = CTT43LD0/GGIO17.ST.Ind5.stVal
+Type                = Bool
+OutVarName          = PIGO/GOINGGIO1.SPCS10.stVal
+
+[INPUT11]
+GoCbIndex           = 3
+GoCbEntryIndex      = 1
+Ref                 = CPU32LD0/GGIO17.ST.Ind1.stVal
+Type                = Bool
+OutVarName          = PIGO/GOINGGIO1.SPCS11.stVal
+
+[INPUT12]
+GoCbIndex           = 3
+GoCbEntryIndex      = 2
+Ref                 = CPU32LD0/GGIO17.ST.Ind2.stVal
+Type                = Bool
+OutVarName          = PIGO/GOINGGIO1.SPCS12.stVal
+
+[INPUT13]
+GoCbIndex           = 3
+GoCbEntryIndex      = 3
+Ref                 = CPU32LD0/GGIO17.ST.Ind3.stVal
+Type                = Bool
+OutVarName          = PIGO/GOINGGIO1.SPCS13.stVal
+
+[INPUT14]
+GoCbIndex           = 3
+GoCbEntryIndex      = 4
+Ref                 = CPU32LD0/GGIO17.ST.Ind4.stVal
+Type                = Bool
+OutVarName          = PIGO/GOINGGIO1.SPCS14.stVal
+
+[INPUT15]
+GoCbIndex           = 3
+GoCbEntryIndex      = 5
+Ref                 = CPU32LD0/GGIO17.ST.Ind5.stVal
+Type                = Bool
+OutVarName          = PIGO/GOINGGIO1.SPCS15.stVal
+
+

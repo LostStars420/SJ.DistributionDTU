@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="yes"?>
+<ConfigSet>
+  <SerialPort>
+    <CommonPort>1</CommonPort>
+    <Baud>56000</Baud>
+    <DataBit>8</DataBit>
+    <ParityBit>0</ParityBit>
+    <StopBit>1</StopBit> 
+  </SerialPort>  
+</ConfigSet>

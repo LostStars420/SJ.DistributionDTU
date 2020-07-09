@@ -1,0 +1,6 @@
+E:\project\DistributionDTU\Distribution\ZFreeGo.DistributionDTU\ZFreeGo.Common\bin\Release\ZFreeGo.Common.dll
+E:\project\DistributionDTU\Distribution\ZFreeGo.DistributionDTU\ZFreeGo.Common\bin\Release\ZFreeGo.Common.pdb
+E:\project\DistributionDTU\Distribution\ZFreeGo.DistributionDTU\ZFreeGo.Common\obj\Release\ZFreeGo.Common.csprojAssemblyReference.cache
+E:\project\DistributionDTU\Distribution\ZFreeGo.DistributionDTU\ZFreeGo.Common\obj\Release\ZFreeGo.Common.csproj.CoreCompileInputs.cache
+E:\project\DistributionDTU\Distribution\ZFreeGo.DistributionDTU\ZFreeGo.Common\obj\Release\ZFreeGo.Common.dll
+E:\project\DistributionDTU\Distribution\ZFreeGo.DistributionDTU\ZFreeGo.Common\obj\Release\ZFreeGo.Common.pdb

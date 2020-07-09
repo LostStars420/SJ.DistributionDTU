@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <ElectricPulse>
+    <ID>1</ID>
+    <Name>I路开关分位置</Name>
+    <Value>2</Value>
+    <Unit>是</Unit>
+    <TimeStamp>18:21:27</TimeStamp>
+    <Comment>带时标</Comment>    
+  </ElectricPulse>
+  
+</NewDataSet>

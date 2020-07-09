@@ -1,0 +1,9 @@
+G:\MyCode\WPF\IntelligentRelayControlPlatform\ZFreeGo.IntelligentControlPlatform.Modbus\bin\Release\ZFreeGo.IntelligentControlPlatform.Modbus.dll
+G:\MyCode\WPF\IntelligentRelayControlPlatform\ZFreeGo.IntelligentControlPlatform.Modbus\bin\Release\ZFreeGo.IntelligentControlPlatform.Modbus.pdb
+G:\MyCode\WPF\IntelligentRelayControlPlatform\ZFreeGo.IntelligentControlPlatform.Modbus\obj\Release\ZFreeGo.IntelligentControlPlatform.Modbus.dll
+G:\MyCode\WPF\IntelligentRelayControlPlatform\ZFreeGo.IntelligentControlPlatform.Modbus\obj\Release\ZFreeGo.IntelligentControlPlatform.Modbus.pdb
+H:\MyCode\Dotnet\IntelligentRelayControlPlatform\ZFreeGo.IntelligentControlPlatform.Modbus\bin\Release\ZFreeGo.IntelligentControlPlatform.Modbus.dll
+H:\MyCode\Dotnet\IntelligentRelayControlPlatform\ZFreeGo.IntelligentControlPlatform.Modbus\bin\Release\ZFreeGo.IntelligentControlPlatform.Modbus.pdb
+H:\MyCode\Dotnet\IntelligentRelayControlPlatform\ZFreeGo.IntelligentControlPlatform.Modbus\obj\Release\ZFreeGo.IntelligentControlPlatform.Modbus.csprojResolveAssemblyReference.cache
+H:\MyCode\Dotnet\IntelligentRelayControlPlatform\ZFreeGo.IntelligentControlPlatform.Modbus\obj\Release\ZFreeGo.IntelligentControlPlatform.Modbus.dll
+H:\MyCode\Dotnet\IntelligentRelayControlPlatform\ZFreeGo.IntelligentControlPlatform.Modbus\obj\Release\ZFreeGo.IntelligentControlPlatform.Modbus.pdb

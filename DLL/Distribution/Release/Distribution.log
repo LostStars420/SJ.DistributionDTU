@@ -1,0 +1,23 @@
+﻿  Buffer.c
+  helper.c
+  list.c
+  Router.c
+j:\mycode\projectcode\distributiondtu\rtt_p2p\project\distribution\inc\distribution_enum.h(14): warning C4005: “NULL”: 宏重定义
+  D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\vcruntime.h(236): note: 参见“NULL”的前一个定义
+  CRC16.c
+  RtuFrame.c
+j:\mycode\projectcode\distributiondtu\rtt_p2p\project\distribution\inc\distribution_enum.h(14): warning C4005: “NULL”: 宏重定义
+  D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\vcruntime.h(236): note: 参见“NULL”的前一个定义
+..\..\..\RTT_P2P\Project\Protocol\Src\RtuFrame.c(72): warning C4244: “return”: 从“uint16_t”转换到“uint8_t”，可能丢失数据
+..\..\..\RTT_P2P\Project\Protocol\Src\RtuFrame.c(169): warning C4244: “return”: 从“uint16_t”转换到“uint8_t”，可能丢失数据
+..\..\..\RTT_P2P\Project\Protocol\Src\RtuFrame.c(188): warning C4554: “>>”: 检查运算符优先级可能存在的错误；使用圆括号阐明优先级
+..\..\..\RTT_P2P\Project\Protocol\Src\RtuFrame.c(189): warning C4554: “>>”: 检查运算符优先级可能存在的错误；使用圆括号阐明优先级
+  stdafx.c
+  dllmain.c
+  CallInterface.cpp
+    正在创建库 J:\MyCode\ProjectCode\DistributionDTU\ZFreeGo.DistributionDTU\Release\Distribution.lib 和对象 J:\MyCode\ProjectCode\DistributionDTU\ZFreeGo.DistributionDTU\Release\Distribution.exp
+  正在生成代码
+  All 16 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  Distribution.vcxproj -> J:\MyCode\ProjectCode\DistributionDTU\ZFreeGo.DistributionDTU\Release\Distribution.dll
+  Distribution.vcxproj -> J:\MyCode\ProjectCode\DistributionDTU\ZFreeGo.DistributionDTU\Release\Distribution.pdb (Full PDB)

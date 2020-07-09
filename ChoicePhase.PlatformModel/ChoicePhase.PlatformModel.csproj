@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C6D3ACAC-470C-4DC7-A924-57F40CFEDB95}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ChoicePhase.PlatformModel</RootNamespace>
+    <AssemblyName>ChoicePhase.PlatformModel</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GalaSoft.MvvmLight">
+      <HintPath>..\packages\MvvmLightLibs.5.2.0.0\lib\net40\GalaSoft.MvvmLight.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\lib\DataBase\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommunicationServer.cs" />
+    <Compile Include="DataItemSet\FaultStatus.cs" />
+    <Compile Include="DataItemSet\ReciveIpData.cs" />
+    <Compile Include="DataItemSet\StationInformation.cs" />
+    <Compile Include="DataItemSet\SwitchProperty.cs" />
+    <Compile Include="DataItemSet\Communication\SerialPortAttribute.cs" />
+    <Compile Include="DataItemSet\ActionPhase.cs" />
+    <Compile Include="DataItemSet\ConfigParameter.cs" />
+    <Compile Include="DataItemSet\EnableControl.cs" />
+    <Compile Include="DataItemSet\CommandDdentifyItem.cs" />
+    <Compile Include="DataItemSet\ErrorCode.cs" />
+    <Compile Include="DataItemSet\IndicatorLight.cs" />
+    <Compile Include="DataItemSet\LoopChoice.cs" />
+    <Compile Include="DataItemSet\LoopTest.cs" />
+    <Compile Include="DataItemSet\NodeStatus.cs" />
+    <Compile Include="DataItemSet\User.cs" />
+    <Compile Include="GetViewData\NetPortParameterSet.cs" />
+    <Compile Include="GetViewData\SwitchViewData.cs" />
+    <Compile Include="GetViewData\SerialPortParameterSet.cs" />
+    <Compile Include="DataItemSet\StatusBarMessage.cs" />
+    <Compile Include="DataItemSet\PhaseChoice.cs" />
+    <Compile Include="GetViewData\LogicalPresentation.cs" />
+    <Compile Include="GetViewData\NodeAttribute.cs" />
+    <Compile Include="Helper\TypeConvert.cs" />
+    <Compile Include="Helper\OverTimeTimer.cs" />
+    <Compile Include="Helper\ShortFloat.cs" />
+    <Compile Include="Helper\XmlDatasetConvert.cs" />
+    <Compile Include="Helper\XMLOperate.cs" />
+    <Compile Include="PlatformModelServer.cs" />
+    <Compile Include="DataItemSet\AttributeItem.cs" />
+    <Compile Include="DataItemSet\SerialPortParamer.cs" />
+    <Compile Include="GetViewData\MonitorViewData.cs" />
+    <Compile Include="GetViewData\SQLliteDatabase.cs" />
+    <Compile Include="Helper\CommonPath.cs" />
+    <Compile Include="PlatformModelServer_Auxiliary.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DataItemSet\Communication\SerialPortServer.cs" />
+    <Compile Include="DataItemSet\Communication\SerialDataEvent.cs" />
+    <Compile Include="Secure\AccountManager.cs" />
+    <Compile Include="Secure\AuthorityLevel.cs" />
+    <Compile Include="Secure\UserAccount.cs" />
+    <Compile Include="Secure\WhbEncypt.cs" />
+    <Compile Include="Secure\XMLAccountOperate.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Helper\ICO\off1.png" />
+    <Content Include="Helper\ICO\on1.png" />
+    <Content Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ChoicePhase.DeviceNet\ChoicePhase.DeviceNet.csproj">
+      <Project>{653fbee0-bf21-4288-8c68-0d3d49d685f1}</Project>
+      <Name>ChoicePhase.DeviceNet</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.LogTrace\Common.LogTrace.csproj">
+      <Project>{b89398a0-0f99-4fb9-bf91-3e4d030b427d}</Project>
+      <Name>Common.LogTrace</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.Net\Net.csproj">
+      <Project>{2C0B038A-4065-4628-81AB-13B750ED8BEE}</Project>
+      <Name>Net</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Protocol.DistributionControl\Protocol.DistributionControl.csproj">
+      <Project>{DE0C028D-9ECC-48E2-BC5E-9E95E817C54E}</Project>
+      <Name>Protocol.DistributionControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TransportProtocol.Comself\TransportProtocol.Comself.csproj">
+      <Project>{daf5830a-1d1c-4d99-95c3-21430bad1e65}</Project>
+      <Name>TransportProtocol.Comself</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TransportProtocol.ModBus\TransportProtocol.ModBus.csproj">
+      <Project>{201f117c-a205-4b77-92b3-08780a6aa754}</Project>
+      <Name>TransportProtocol.ModBus</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

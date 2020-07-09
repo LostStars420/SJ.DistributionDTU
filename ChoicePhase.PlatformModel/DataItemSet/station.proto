@@ -1,0 +1,119 @@
+// A very simple protocol definition, consisting of only
+// one message.
+//H:\CodeResourceLib\通讯框架\nanopb\nanopb-0.3.9.1-windows-x86\generator-bin
+//generator-bin/protoc --nanopb_out=. simple.proto
+//H:\CodeResourceLib\通讯框架\nanopb\nanopb-0.3.9.1-windows-x86\generator-bin/protoc --nanopb_out=. simple.proto
+
+syntax = "proto2";
+
+message node_property {
+	optional uint32 id = 1;                //id
+	optional uint32 type = 2;                //类型
+    optional uint32 state = 3;   	  //状态  
+   
+    
+	repeated uint32 neighbourCollect= 5;              //邻居 
+	
+	optional uint32 operateType = 6;
+	optional uint32 overTimeType = 7;
+	optional uint32 removalType = 8;
+	optional uint32 insulateType = 9;
+	optional uint32 faultState = 10;
+	required bool isFaultEdgeConnected = 11;
+	
+	
+	repeated uint32 indexArea = 13;                         //配电区域内索引 与 配电区域内相对应   
+    repeated bool isExitArea = 14;                          //对应配电区域是否存在
+    repeated bool isGather = 15;                          //是否收集，如果为true则判定对应配电区域
+
+}
+
+message connect_switch
+{    
+	optional uint32 transferCode = 1; //转供电
+    repeated uint32 path1 = 2; //路径数组  SwitchProperty 电源开关路径 ，存储的为开关属性节点
+	repeated uint32 path2 = 3; //路径数组  SwitchProperty 电源开关路径 ，存储的为开关属性节点
+    optional uint32 count = 4;			// 路径数量
+    required bool isConnect = 5; //是否为联络开关
+};
+ // 开关所在路径上的联络开关的信息，ID，
+message connect_path
+{
+	optional uint32 id = 1; //id
+	optional uint32 remainderCapacity =  2; //剩余容量
+	required bool isUpdated =  3; //是否更新
+};
+
+
+// 配电区域 相关信息
+message distribution_power_area
+{
+    //List powerArea;             //配电区域列表
+    repeated uint32 areaSwitch = 1; // 配电区域列表 数组形式
+	
+  
+    optional uint32 upadetedFlag =  2;        //按照 areaSwitch索引置位或者复位，表示更新完毕upadetedFull
+    required bool  isUpadeted = 3;          //更新完成标志
+
+    required bool isFaultArea =  4;            //是否为故障区域 
+    required bool isExitFaultMessage =  5;        //配电区域内，是否存在故障信息
+
+    optional uint32 upadetedFull =  6;      //(2^switchNum - 1)
+	optional uint32 removalType =  7;    //是否异常成功
+	optional uint32 insulateType = 8;    //是否异常成功
+};
+//  开关节点的配电区域信息
+message distribution_station
+{    
+    optional uint32  areaCount = 1;                                 //配电区域个数
+    required bool isComplted = 2; //是否已经实现 注意需要维护   
+	required bool isGatherCompleted = 3; //是否收集完成
+	required bool isGatherCalculateCompleted = 4;//是否收集计算完成
+    optional uint32 switchRef = 5; //参考开关
+	required bool isAlreayExitedFault = 6;// 是否已经存在故障区域
+	required bool isExitedInsulateFailure = 7;//隔离是否失败 
+};
+
+
+message faultdeal_handle
+{
+    optional uint32 switchPropertyID = 1; //开关属性
+
+    optional uint32 state = 2; //当前处理状态
+    optional uint32 lastState = 3; //上一个状态
+    optional uint32 nextState = 4; //下一个状态
+
+    required bool isRun = 5; //是否正在运行 正在进行切除等一系列动作
+
+    optional uint32 step = 6; //状态内的处理阶段
+    optional uint32 startTime =  7; //开始时间
+    optional uint32 limitTime = 8; //限制时间
+                        //限制时间合集
+    optional uint32 t1 = 9;     //收集信息总时间
+    optional uint32 t2 = 10;     //限时检测时间
+    optional uint32 t3 = 11;     //延时检测时间
+    optional uint32 t4 = 12;     //收集总时间
+    optional uint32 t5 = 13;     //收集总时间
+
+
+    optional uint32 checkOpenTime = 14;//分闸检测时间
+    optional uint32 checkBackupTime = 15;//后备保护检测时间
+    optional uint32 rejectTime = 16;     //拒分后的检测测时间
+	optional uint32 reciveRemovalSuccessTime = 17;//收到切除成功时间
+	optional uint32 reciveConnectTime = 18; //接收联络开关信息超时时间      
+    required bool isCheckPass= 19; //自检检测通过
+};
+
+
+
+
+message StationMessage {
+	repeated uint32 idCollect = 1;                //异常
+	required bool isGainComplted = 2;
+	optional node_property   node = 3;
+	optional connect_switch  connect = 4;
+	repeated connect_path  con_path = 5;
+	repeated distribution_power_area power_area = 6;
+	optional distribution_station distribution = 7;
+	optional faultdeal_handle   fault_handle = 8;
+}

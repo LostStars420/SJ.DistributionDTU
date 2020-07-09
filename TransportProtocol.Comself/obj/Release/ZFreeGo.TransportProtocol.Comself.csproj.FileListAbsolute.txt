@@ -1,0 +1,17 @@
+J:\MyCode\ProjectCode\DistributionDTU\ZFreeGo.DistributionDTU\ZFreeGo.TransportProtocol.Comself\bin\Release\ZFreeGo.ChoicePhase.Comself.dll
+J:\MyCode\ProjectCode\DistributionDTU\ZFreeGo.DistributionDTU\ZFreeGo.TransportProtocol.Comself\bin\Release\ZFreeGo.ChoicePhase.Comself.pdb
+J:\MyCode\ProjectCode\DistributionDTU\ZFreeGo.DistributionDTU\ZFreeGo.TransportProtocol.Comself\bin\Release\ZFreeGo.Common.LogTrace.dll
+J:\MyCode\ProjectCode\DistributionDTU\ZFreeGo.DistributionDTU\ZFreeGo.TransportProtocol.Comself\bin\Release\ZFreeGo.Common.LogTrace.pdb
+J:\MyCode\ProjectCode\DistributionDTU\ZFreeGo.DistributionDTU\ZFreeGo.TransportProtocol.Comself\obj\Release\ZFreeGo.TransportProtocol.Comself.csprojResolveAssemblyReference.cache
+J:\MyCode\ProjectCode\DistributionDTU\ZFreeGo.DistributionDTU\ZFreeGo.TransportProtocol.Comself\obj\Release\ZFreeGo.ChoicePhase.Comself.dll
+J:\MyCode\ProjectCode\DistributionDTU\ZFreeGo.DistributionDTU\ZFreeGo.TransportProtocol.Comself\obj\Release\ZFreeGo.ChoicePhase.Comself.pdb
+E:\project\DistributionDTU\Distribution\ZFreeGo.DistributionDTU\ZFreeGo.TransportProtocol.Comself\bin\Release\ZFreeGo.TransportProtocol.Comself.dll
+E:\project\DistributionDTU\Distribution\ZFreeGo.DistributionDTU\ZFreeGo.TransportProtocol.Comself\bin\Release\ZFreeGo.TransportProtocol.Comself.pdb
+E:\project\DistributionDTU\Distribution\ZFreeGo.DistributionDTU\ZFreeGo.TransportProtocol.Comself\bin\Release\protobuf-net.dll
+E:\project\DistributionDTU\Distribution\ZFreeGo.DistributionDTU\ZFreeGo.TransportProtocol.Comself\bin\Release\ZFreeGo.Common.LogTrace.dll
+E:\project\DistributionDTU\Distribution\ZFreeGo.DistributionDTU\ZFreeGo.TransportProtocol.Comself\bin\Release\ZFreeGo.Common.LogTrace.pdb
+E:\project\DistributionDTU\Distribution\ZFreeGo.DistributionDTU\ZFreeGo.TransportProtocol.Comself\obj\Release\ZFreeGo.TransportProtocol.Comself.csprojAssemblyReference.cache
+E:\project\DistributionDTU\Distribution\ZFreeGo.DistributionDTU\ZFreeGo.TransportProtocol.Comself\obj\Release\ZFreeGo.TransportProtocol.Comself.csproj.CoreCompileInputs.cache
+E:\project\DistributionDTU\Distribution\ZFreeGo.DistributionDTU\ZFreeGo.TransportProtocol.Comself\obj\Release\ZFreeGo.TransportProtocol.Comself.csproj.CopyComplete
+E:\project\DistributionDTU\Distribution\ZFreeGo.DistributionDTU\ZFreeGo.TransportProtocol.Comself\obj\Release\ZFreeGo.TransportProtocol.Comself.dll
+E:\project\DistributionDTU\Distribution\ZFreeGo.DistributionDTU\ZFreeGo.TransportProtocol.Comself\obj\Release\ZFreeGo.TransportProtocol.Comself.pdb

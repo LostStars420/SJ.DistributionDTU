@@ -1,0 +1,7 @@
+J:\MyCode\Dotnet\ZFreeGo.ChoicePhase\ZFreeGo.TransportProtocol.ModBus\bin\Release\ZFreeGo.ChoicePhase.Modbus.dll
+J:\MyCode\Dotnet\ZFreeGo.ChoicePhase\ZFreeGo.TransportProtocol.ModBus\bin\Release\ZFreeGo.ChoicePhase.Modbus.pdb
+J:\MyCode\Dotnet\ZFreeGo.ChoicePhase\ZFreeGo.TransportProtocol.ModBus\bin\Release\ZFreeGo.Common.LogTrace.dll
+J:\MyCode\Dotnet\ZFreeGo.ChoicePhase\ZFreeGo.TransportProtocol.ModBus\bin\Release\ZFreeGo.Common.LogTrace.pdb
+J:\MyCode\Dotnet\ZFreeGo.ChoicePhase\ZFreeGo.TransportProtocol.ModBus\obj\Release\ZFreeGo.TransportProtocol.ModBus.csprojResolveAssemblyReference.cache
+J:\MyCode\Dotnet\ZFreeGo.ChoicePhase\ZFreeGo.TransportProtocol.ModBus\obj\Release\ZFreeGo.ChoicePhase.Modbus.dll
+J:\MyCode\Dotnet\ZFreeGo.ChoicePhase\ZFreeGo.TransportProtocol.ModBus\obj\Release\ZFreeGo.ChoicePhase.Modbus.pdb

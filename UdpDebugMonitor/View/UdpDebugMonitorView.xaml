@@ -1,0 +1,125 @@
+﻿<Window x:Class="UdpDebugMonitor.View.UdpDebugMonitorView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+      xmlns:ei1="http://schemas.microsoft.com/expression/2010/interactions"
+      d:DesignHeight="300" d:DesignWidth="300" 
+      DataContext="{Binding UdpDebugMonitor, Source={StaticResource Locator}}"
+      Title="UDP调试界面">
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction Command="{Binding LoadDataCommand}"/>
+        </i:EventTrigger>
+        <i:EventTrigger EventName="Unloaded">
+            <i:InvokeCommandAction Command="{Binding UnLoadedLoadDataCommand}"/>
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Row="0" Grid.Column="0">
+            <DataGrid Grid.Row="1" Margin="5" AutoGenerateColumns="False"  Name="gridProtectSetPoint" 
+                  SelectedIndex="{Binding SelectedIndex}" CanUserSortColumns="False"  ItemsSource="{Binding UserData}"  MouseDoubleClick="gridProtectSetPoint_MouseDoubleClick">
+                <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Unloaded">
+                            <i:InvokeCommandAction Command="{Binding  UnloadedCommand}"  />
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="IP"  MinWidth="50" Binding="{Binding IP,Mode=OneWay}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="port"  Binding="{Binding Port,Mode=OneWay}"></DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+
+        <Grid Grid.Row="0" Grid.Column="1">
+            <TextBox Margin="0,10,0,10" Background="AliceBlue"   IsReadOnly="{Binding IsReadOnly}"  Text="{Binding Message}" 
+            VerticalScrollBarVisibility="Visible" TextWrapping="Wrap" MaxWidth="10000"  TextChanged="textBox_TextChanged">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="KeyUp">
+                        <ei1:CallMethodAction TargetObject="{Binding}" MethodName="UserNameKeyDown" />
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+                <TextBox.ContextMenu>
+                    <ContextMenu StaysOpen="True"  IsEnabled="True">
+                        <MenuItem Header="清空内容" Command="{Binding CmdOperate}" CommandParameter="Clear"/>
+                    </ContextMenu>
+                </TextBox.ContextMenu>
+            </TextBox>
+        </Grid>
+        
+        <Grid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0" Grid.Row="1">
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <Label Margin="3">远程:</Label>
+                    <TextBox  Name="remoteIp"  Margin="3"   MinWidth="100" Text="{Binding SelectedIP}"   TextAlignment="Center"></TextBox>
+                    <!--<TextBox  Name="remoteIp" Margin="3"   MinWidth="100" Text="{Binding SelectedIP}"   TextAlignment="Center"></TextBox>-->
+                    <TextBox Name="remotePort" Margin="3"   MinWidth="40" Text="{Binding SelectedPort}"  TextAlignment="Center" ></TextBox>
+                    <Button Margin="3" Padding="3" CommandParameter="Connect" Command="{Binding CmdOperate}" IsEnabled="{Binding ConnectEnable}">连接</Button>
+                </StackPanel>
+                
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <Label Margin="3">本地:</Label>
+                    <ComboBox Margin="3" MinWidth="100" ItemsSource="{Binding CombboxList}" SelectedItem="{Binding CombboxItem}"></ComboBox>
+                    <TextBox Margin="3"  MinWidth="40" TextAlignment="Center" Text="5533" />
+                    <Button Margin="3" Padding="3" CommandParameter="Disconnect" Command="{Binding CmdOperate}" IsEnabled="{Binding DisconnectEnable}">断开</Button>
+                </StackPanel>
+            </StackPanel>
+            
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="9*"/>
+                    <RowDefinition Height="20*"/>
+                </Grid.RowDefinitions>
+                <TextBox Margin="0" Background="AliceBlue" IsReadOnly="false" AcceptsReturn="True" 
+                  VerticalScrollBarVisibility="Visible"  TextWrapping="Wrap" MaxWidth="10000" Text="{Binding SendMessage}" Grid.RowSpan="2" >
+                    <TextBox.ContextMenu>
+                        <ContextMenu StaysOpen="True"  IsEnabled="True">
+                            <MenuItem Header="清空内容" Command="{Binding CmdOperate}" CommandParameter="LinkMessage" />
+                        </ContextMenu>
+                    </TextBox.ContextMenu>
+                </TextBox>
+            </Grid>
+            
+            <Grid Grid.Column="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="21*"/>
+                    <RowDefinition Height="8*"/>
+                </Grid.RowDefinitions>
+                <StackPanel Orientation="Vertical" Grid.RowSpan="2">
+                    <Button Margin="3" Padding="3" CommandParameter="Send" Command="{Binding CmdOperate}" >发送</Button>
+                    <Button Margin="3" Padding="3" CommandParameter="SaveAll" Command="{Binding CmdOperate}" >保存</Button>
+                    <Button Margin="3" Padding="3" CommandParameter="ClearAll" Command="{Binding CmdOperate}" >清空</Button>
+                </StackPanel>
+            </Grid>
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <StatusBarItem Grid.Row="2">
+                <StackPanel Orientation="Horizontal" >
+                    <TextBlock Text="远程IP：" VerticalAlignment="Center"/>
+                    <TextBlock Margin="3"   MinWidth="100"  Text="{Binding RemoteIP}" ></TextBlock>
+                    <TextBlock Margin="3"   MinWidth="40"  Text="{Binding RemotePort}" TextAlignment="Center"></TextBlock>
+                </StackPanel>
+            </StatusBarItem>
+        </Grid>
+    </Grid>
+</Window>

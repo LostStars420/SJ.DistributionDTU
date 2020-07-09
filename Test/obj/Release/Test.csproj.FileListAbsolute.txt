@@ -1,0 +1,10 @@
+J:\MyCode\Dotnet\ZFreeGo.ChoicePhase\Test\bin\Release\Test.exe
+J:\MyCode\Dotnet\ZFreeGo.ChoicePhase\Test\bin\Release\Test.pdb
+J:\MyCode\Dotnet\ZFreeGo.ChoicePhase\Test\obj\Release\Test.csprojResolveAssemblyReference.cache
+J:\MyCode\Dotnet\ZFreeGo.ChoicePhase\Test\obj\Release\Test.exe
+J:\MyCode\Dotnet\ZFreeGo.ChoicePhase\Test\obj\Release\Test.pdb
+J:\MyCode\ProjectCode\DistributionDTU\ZFreeGo.DistributionDTU\Test\obj\Release\Test.exe
+J:\MyCode\ProjectCode\DistributionDTU\ZFreeGo.DistributionDTU\Test\obj\Release\Test.pdb
+J:\MyCode\ProjectCode\DistributionDTU\ZFreeGo.DistributionDTU\Test\bin\Release\Test.exe
+J:\MyCode\ProjectCode\DistributionDTU\ZFreeGo.DistributionDTU\Test\bin\Release\Test.pdb
+J:\MyCode\ProjectCode\DistributionDTU\ZFreeGo.DistributionDTU\Test\obj\Release\Test.csprojResolveAssemblyReference.cache

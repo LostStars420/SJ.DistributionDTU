@@ -1,0 +1,184 @@
+<Page x:Class="ChoicePhase.ControlPlatform.View.SwitchListView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+      mc:Ignorable="d"  ShowsNavigationUI="False"
+      DataContext="{Binding SwitchList, Source={StaticResource Locator}}"
+	  Title="SwitchListView">
+
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction Command="{Binding LoadDataCommand}" />
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions >
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Grid.ColumnSpan="2">
+            <StackPanel Margin="3" Orientation="Horizontal" >
+                <Label Margin="3">MAC:</Label>
+                <ComboBox MinWidth="60" Margin="3" ItemsSource="{Binding StationNameList}" SelectedIndex="{Binding SelectMacIndex}"></ComboBox>
+                <TextBox MinWidth="60" Margin="3" Text="{Binding MacAddress}" IsReadOnly="True"></TextBox>
+
+                <Label Margin="3">目的地址:</Label>
+                <TextBox MinWidth="60" Margin="3" Text="{Binding DestAddress}"></TextBox>
+
+                <Label Margin="3">功能码:</Label>
+                <TextBox MinWidth="60" Margin="3" Text="{Binding FunctionCode}"></TextBox>
+
+                <!--<Button Margin="3" Padding="3" Command="{Binding SetpointOperate}" CommandParameter="Read">读取定值</Button>-->
+                <Button Margin="30,3,3,3" Padding="3" Command="{Binding SetpointOperate}" CommandParameter="UpdateNeighbor">更新邻居</Button>
+                <Label Margin="30,3,3,3">工作地址:</Label>
+                <TextBox MinWidth="60" Margin="3" Text="{Binding WorkAddress}"></TextBox>
+                <Label Margin="30,3,3,3">IP:</Label>
+                <TextBox MinWidth="100" Margin="3" Text="{Binding WorkAddressIP}"></TextBox>
+                <CheckBox Margin="30,3,3,3" Padding="3" VerticalAlignment="Center" VerticalContentAlignment="Center"  IsChecked="{Binding MantainceCheck}">维护模式</CheckBox>
+            </StackPanel>
+        </Grid>
+        <DataGrid Grid.Row="1" Margin="5" AutoGenerateColumns="False"  Name="gridProtectSetPoint" IsReadOnly="{Binding  ReadOnly}" 
+            SelectedIndex="{Binding SelectedIndex}" SelectedValue=""  CanUserSortColumns="False"  ItemsSource="{Binding UserData}" Grid.ColumnSpan="2" Background="#FFF0F0F0"  >
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="SelectionChanged">
+                    <i:InvokeCommandAction Command="{Binding SelectedItemCommand}" CommandParameter="{Binding ElementName=gridProtectSetPoint, Path=SelectedItems}" />
+                </i:EventTrigger>
+                <i:EventTrigger EventName="Unloaded">
+                    <i:InvokeCommandAction Command="{Binding  UnloadedCommand}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+
+            <DataGrid.ContextMenu>
+                <ContextMenu Name="dgmenu" StaysOpen="True"  >
+                    <MenuItem Header="获取站点信息" CommandParameter="GetStation" Command="{Binding DataGridMenumSelected}"/>
+                    <Separator></Separator>
+
+                    <MenuItem Header="使能设置" CommandParameter="SetNewValue" Command="{Binding DataGridMenumSelected}" VerticalAlignment="Center">
+                        <CheckBox Margin="3" Padding="3" VerticalAlignment="Center" VerticalContentAlignment="Center"  IsChecked="{Binding FixCheck}">修改</CheckBox>
+                    </MenuItem>
+                    <Separator></Separator>
+                    <MenuItem Header="下发当前配置项" CommandParameter="SetNewValue" Command="{Binding DataGridMenumSelected}"/>
+                    <MenuItem Header="下发选中的ID" CommandParameter="SetID" Command="{Binding DataGridMenumSelected}"/>
+
+                    <MenuItem Header="设置为站点" CommandParameter="SetStation" Command="{Binding DataGridMenumSelected}"/>
+                    <MenuItem Header="设置为站点Protobuf" CommandParameter="SetStationProtobuf" Command="{Binding DataGridMenumSelected}"/>
+                    <Separator></Separator>
+
+                    <MenuItem Header="重新载入表格" CommandParameter="Reload" Command="{Binding DataGridMenumSelected}"/>
+                    <MenuItem Header="保存表格到数据库"  CommandParameter="Save" Command="{Binding DataGridMenumSelected}"/>
+                    <MenuItem Header="选择行之上插入新行"  CommandParameter="AddUp" Command="{Binding DataGridMenumSelected}"/>
+                    <MenuItem Header="选择行之下插入新行"  CommandParameter="AddDown" Command="{Binding DataGridMenumSelected}"/>
+                    <MenuItem Header="删除选中行"  CommandParameter="DeleteSelect" Command="{Binding DataGridMenumSelected}"/>
+                </ContextMenu>
+            </DataGrid.ContextMenu>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="配置号"  Width="Auto" Binding="{Binding  ConfigID}"></DataGridTextColumn>
+                <DataGridTextColumn Header="IP"  Width="Auto" Binding="{Binding  IP}"></DataGridTextColumn>
+                <DataGridTemplateColumn Header="类型描述">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <ComboBox x:Name="switchType" SelectedValue="{Binding SelectedSwitchType}"  ItemsSource="{Binding TypeSelectionList}"  Background="White" BorderBrush="BlueViolet" Foreground="Black">
+                                <i:Interaction.Triggers>
+                                    <i:EventTrigger EventName="SelectionChanged">
+                                        <i:InvokeCommandAction Command="{Binding  SelectedTypeChangedCommand}" CommandParameter="{Binding ElementName = switchType, Path = SelectedItem}"></i:InvokeCommandAction> 
+                                    </i:EventTrigger>
+                                </i:Interaction.Triggers>
+                            </ComboBox>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn Header="类型"  Width="Auto" Binding="{Binding  Type}"></DataGridTextColumn>
+                <DataGridTemplateColumn Header="状态描述">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <ComboBox x:Name="SwitchState" SelectedValue="{Binding SelectedState}" ItemsSource="{Binding StateSelectionList}"  Background="White" BorderBrush="BlueViolet" Foreground="Black">
+                                <i:Interaction.Triggers>
+                                    <i:EventTrigger EventName="SelectionChanged">
+                                        <i:InvokeCommandAction Command="{Binding  SelectedStateChangedCommand}" CommandParameter="{Binding ElementName = SwitchState, Path = SelectedItem}"></i:InvokeCommandAction>
+                                    </i:EventTrigger>
+                                </i:Interaction.Triggers>
+                            </ComboBox>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn Header="状态"  Width="Auto" Binding="{Binding  State}"></DataGridTextColumn>
+                <DataGridTextColumn Header="邻居数量"    MinWidth="50" Binding="{Binding NeighboorNum}"></DataGridTextColumn>
+                <DataGridTextColumn Header="邻居列表"    MinWidth="50" Binding="{Binding NeighboorCollect}"></DataGridTextColumn>
+
+                <DataGridTextColumn Header="M"  MinWidth="50" Binding="{Binding M}" IsReadOnly="True"></DataGridTextColumn>
+                <DataGridTextColumn Header="MCount"  MinWidth="50" Binding="{Binding MCount}"></DataGridTextColumn>
+                <DataGridTextColumn Header="MType"    MinWidth="50" Binding="{Binding MType}"></DataGridTextColumn>
+                <DataGridTextColumn Header="N" MinWidth="50" Binding="{Binding N}" IsReadOnly="True"></DataGridTextColumn>
+                <DataGridTextColumn Header="NCount" MinWidth="50" Binding="{Binding NCount}"></DataGridTextColumn>
+                <DataGridTextColumn Header="NType"  MinWidth="50" Binding="{Binding NType}"></DataGridTextColumn>
+                <!--新加的Addr和gocb邻居那块配置-->
+                <DataGridTextColumn Header="Addr" MinWidth="50" Binding="{Binding Addr}"></DataGridTextColumn>
+                <DataGridTextColumn Header="MAC-Address" MinWidth="50" Binding="{Binding MACAddress}"></DataGridTextColumn>
+                <DataGridTextColumn Header="APPID" MinWidth="50" Binding="{Binding APPID}"></DataGridTextColumn>
+                <!--<DataGridTextColumn Header="开关ID" MinWidth="50" Binding="{Binding SwitchID}"></DataGridTextColumn>-->
+                <DataGridTextColumn Header="最大时间" MinWidth="50" Binding="{Binding MaxTime}"></DataGridTextColumn>
+                <!--结 束-->
+                <DataGridTextColumn Header="容量"    MinWidth="50" Binding="{Binding Capacity}"></DataGridTextColumn>
+                <DataGridTextColumn Header="故障"    MinWidth="50" Binding="{Binding FaultState}"></DataGridTextColumn>
+                <DataGridTextColumn Header="操作"    MinWidth="50" Binding="{Binding Operate}"></DataGridTextColumn>
+                <DataGridTextColumn Header="超时"    MinWidth="50" Binding="{Binding OverTime}"></DataGridTextColumn>
+                <DataGridTextColumn Header="备注"    MinWidth="50" Binding="{Binding Comment}"></DataGridTextColumn>
+                <DataGridTextColumn Header="测试"  MinWidth="50" Binding="{Binding Test}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Grid Grid.Row="2" Grid.ColumnSpan="2">
+            <StackPanel Orientation="Horizontal">
+                <GroupBox Header="配置">
+                    <StackPanel Orientation="Horizontal">
+                        <Label Margin="3">命令:</Label>
+                        <ComboBox MinWidth="60" Margin="3" ItemsSource="{Binding OperateCmd}" SelectedIndex="{Binding SelectOperateCmdIndex}"></ComboBox>
+                        <Button Margin="3" Padding="3" CommandParameter="ControlOperateCommand" Command="{Binding DataGridMenumSelected}">操作</Button>
+                    </StackPanel>
+                </GroupBox>
+
+                <GroupBox Header="生成Goose/配置文件" Margin="30,0,0,0">
+                    <StackPanel Orientation="Horizontal">
+                        <Button Margin="10,3,3,3" Padding="3" CommandParameter="SelectPath" Command="{Binding DataGridMenumSelected}">选择保存文件路径</Button>
+                        <TextBox Margin="10,3,3,3" MinWidth="200" Height="30" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" IsReadOnly="True" Text="{Binding Path}"></TextBox>
+                        <GroupBox Header="Ind" Margin="3,0,0,0">
+                            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+                                <TextBox MinWidth="20" Text="{Binding InNum}" ></TextBox>
+                                <!-- Text="4"-->
+                            </StackPanel>
+                        </GroupBox>
+                        <GroupBox Header="Alm" Margin="3,0,0,0">
+                            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+                                <TextBox MinWidth="20" Text="{Binding AlmNum}" ></TextBox>
+                                <!--Text="0"-->
+                            </StackPanel>
+                        </GroupBox>
+                        <Button Margin="10,3,3,3" Padding="3" CommandParameter="GenerateGoose" Command="{Binding DataGridMenumSelected}">生成Goose文件</Button>
+                        <Label Margin="3">VAN-ID:</Label>
+                        <TextBox Margin="10,3,3,3" MinWidth="100" Height="30" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Text="{Binding VANID}"></TextBox>
+                        <Button Margin="10,3,3,3" Padding="3" CommandParameter="GenerateCinfigFile" Command="{Binding DataGridMenumSelected}">生成配置文件</Button>
+                    </StackPanel>
+                </GroupBox>
+
+
+
+                <!--<GroupBox Header="生成配置文件" Margin="10,0,0,0">
+                    <StackPanel Orientation="Horizontal">
+                        -->
+                <!--<Button Margin="10,3,3,3" Padding="3" CommandParameter="SelectFilePath" Command="{Binding DataGridMenumSelected}">选择文件</Button>-->
+                <!--<TextBox Margin="10,3,3,3" MinWidth="200" Text="{Binding SelectedFile}"></TextBox>-->
+                <!--
+                        <Button Margin="10,3,3,3" Padding="3" CommandParameter="SelectPath" Command="{Binding DataGridMenumSelected}">选择生成文件路径</Button>
+                        <Button Margin="10,3,3,3" Padding="3" CommandParameter="GenerateCinfigFile" Command="{Binding DataGridMenumSelected}">生成配置文件</Button>
+                    </StackPanel>
+                </GroupBox>-->
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>

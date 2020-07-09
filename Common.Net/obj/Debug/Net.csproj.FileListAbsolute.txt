@@ -1,0 +1,11 @@
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\ZFreeGo.Common.Net\obj\Debug\Net.csprojAssemblyReference.cache
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\ZFreeGo.Common.Net\obj\Debug\Net.csproj.CoreCompileInputs.cache
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\ZFreeGo.Common.Net\bin\Debug\Net.dll
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\ZFreeGo.Common.Net\bin\Debug\Net.pdb
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\ZFreeGo.Common.Net\obj\Debug\Net.dll
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\ZFreeGo.Common.Net\obj\Debug\Net.pdb
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\Common.Net\bin\Debug\Net.dll
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\Common.Net\bin\Debug\Net.pdb
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\Common.Net\obj\Debug\Net.csproj.CoreCompileInputs.cache
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\Common.Net\obj\Debug\Net.dll
+D:\Users\sojo_qyl\Desktop\工作报告\project\ZFreeGo.DistributionDTU\Common.Net\obj\Debug\Net.pdb

@@ -1,0 +1,144 @@
+TraceSourceApp Error: 1 : Error message.
+    DateTime=2017-03-28T08:32:41.7065769Z
+    Callstack=   在 System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   在 System.Environment.get_StackTrace()
+   在 System.Diagnostics.TraceEventCache.get_Callstack()
+   在 System.Diagnostics.TraceListener.WriteFooter(TraceEventCache eventCache)
+   在 System.Diagnostics.TraceSource.TraceEvent(TraceEventType eventType, Int32 id, String message)
+   在 Test.Program.Activity1() 位置 j:\MyCode\Dotnet\ZFreeGo.ChoicePhase\Test\Program.cs:行号 60
+   在 Test.Program.Main(String[] args) 位置 j:\MyCode\Dotnet\ZFreeGo.ChoicePhase\Test\Program.cs:行号 38
+   在 System.AppDomain._nExecuteAssembly(RuntimeAssembly assembly, String[] args)
+   在 System.AppDomain.ExecuteAssembly(String assemblyFile, Evidence assemblySecurity, String[] args)
+   在 Microsoft.VisualStudio.HostingProcess.HostProc.RunUsersAssembly()
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+TraceSourceApp Critical: 3 : Critical message.
+    DateTime=2017-03-28T08:32:41.7105772Z
+    Callstack=   在 System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   在 System.Environment.get_StackTrace()
+   在 System.Diagnostics.TraceEventCache.get_Callstack()
+   在 System.Diagnostics.TraceListener.WriteFooter(TraceEventCache eventCache)
+   在 System.Diagnostics.TraceSource.TraceEvent(TraceEventType eventType, Int32 id, String message)
+   在 Test.Program.Activity2() 位置 j:\MyCode\Dotnet\ZFreeGo.ChoicePhase\Test\Program.cs:行号 65
+   在 Test.Program.Main(String[] args) 位置 j:\MyCode\Dotnet\ZFreeGo.ChoicePhase\Test\Program.cs:行号 43
+   在 System.AppDomain._nExecuteAssembly(RuntimeAssembly assembly, String[] args)
+   在 System.AppDomain.ExecuteAssembly(String assemblyFile, Evidence assemblySecurity, String[] args)
+   在 Microsoft.VisualStudio.HostingProcess.HostProc.RunUsersAssembly()
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+TraceSourceApp Error: 4 : Error message.
+    DateTime=2017-03-28T08:32:41.7115772Z
+    Callstack=   在 System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   在 System.Environment.get_StackTrace()
+   在 System.Diagnostics.TraceEventCache.get_Callstack()
+   在 System.Diagnostics.TraceListener.WriteFooter(TraceEventCache eventCache)
+   在 System.Diagnostics.TraceSource.TraceEvent(TraceEventType eventType, Int32 id, String message)
+   在 Test.Program.Activity3() 位置 j:\MyCode\Dotnet\ZFreeGo.ChoicePhase\Test\Program.cs:行号 70
+   在 Test.Program.Main(String[] args) 位置 j:\MyCode\Dotnet\ZFreeGo.ChoicePhase\Test\Program.cs:行号 51
+   在 System.AppDomain._nExecuteAssembly(RuntimeAssembly assembly, String[] args)
+   在 System.AppDomain.ExecuteAssembly(String assemblyFile, Evidence assemblySecurity, String[] args)
+   在 Microsoft.VisualStudio.HostingProcess.HostProc.RunUsersAssembly()
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+TraceSourceApp Error: 1 : Error message.
+    DateTime=2017-03-28T11:44:31.3638917Z
+    Callstack=   在 System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   在 System.Environment.get_StackTrace()
+   在 System.Diagnostics.TraceEventCache.get_Callstack()
+   在 System.Diagnostics.TraceListener.WriteFooter(TraceEventCache eventCache)
+   在 System.Diagnostics.TraceSource.TraceEvent(TraceEventType eventType, Int32 id, String message)
+   在 Test.Program.Activity1() 位置 j:\MyCode\Dotnet\ZFreeGo.ChoicePhase\Test\Program.cs:行号 60
+   在 Test.Program.Main(String[] args) 位置 j:\MyCode\Dotnet\ZFreeGo.ChoicePhase\Test\Program.cs:行号 38
+   在 System.AppDomain._nExecuteAssembly(RuntimeAssembly assembly, String[] args)
+   在 System.AppDomain.ExecuteAssembly(String assemblyFile, Evidence assemblySecurity, String[] args)
+   在 Microsoft.VisualStudio.HostingProcess.HostProc.RunUsersAssembly()
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+TraceSourceApp Critical: 3 : Critical message.
+    DateTime=2017-03-28T11:44:31.3678919Z
+    Callstack=   在 System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   在 System.Environment.get_StackTrace()
+   在 System.Diagnostics.TraceEventCache.get_Callstack()
+   在 System.Diagnostics.TraceListener.WriteFooter(TraceEventCache eventCache)
+   在 System.Diagnostics.TraceSource.TraceEvent(TraceEventType eventType, Int32 id, String message)
+   在 Test.Program.Activity2() 位置 j:\MyCode\Dotnet\ZFreeGo.ChoicePhase\Test\Program.cs:行号 65
+   在 Test.Program.Main(String[] args) 位置 j:\MyCode\Dotnet\ZFreeGo.ChoicePhase\Test\Program.cs:行号 43
+   在 System.AppDomain._nExecuteAssembly(RuntimeAssembly assembly, String[] args)
+   在 System.AppDomain.ExecuteAssembly(String assemblyFile, Evidence assemblySecurity, String[] args)
+   在 Microsoft.VisualStudio.HostingProcess.HostProc.RunUsersAssembly()
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+TraceSourceApp Error: 4 : Error message.
+    DateTime=2017-03-28T11:44:31.3688920Z
+    Callstack=   在 System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   在 System.Environment.get_StackTrace()
+   在 System.Diagnostics.TraceEventCache.get_Callstack()
+   在 System.Diagnostics.TraceListener.WriteFooter(TraceEventCache eventCache)
+   在 System.Diagnostics.TraceSource.TraceEvent(TraceEventType eventType, Int32 id, String message)
+   在 Test.Program.Activity3() 位置 j:\MyCode\Dotnet\ZFreeGo.ChoicePhase\Test\Program.cs:行号 70
+   在 Test.Program.Main(String[] args) 位置 j:\MyCode\Dotnet\ZFreeGo.ChoicePhase\Test\Program.cs:行号 51
+   在 System.AppDomain._nExecuteAssembly(RuntimeAssembly assembly, String[] args)
+   在 System.AppDomain.ExecuteAssembly(String assemblyFile, Evidence assemblySecurity, String[] args)
+   在 Microsoft.VisualStudio.HostingProcess.HostProc.RunUsersAssembly()
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+TraceSourceApp Error: 1 : Error message.
+    DateTime=2017-03-28T12:12:54.9663322Z
+    Callstack=   在 System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   在 System.Environment.get_StackTrace()
+   在 System.Diagnostics.TraceEventCache.get_Callstack()
+   在 System.Diagnostics.TraceListener.WriteFooter(TraceEventCache eventCache)
+   在 System.Diagnostics.TraceSource.TraceEvent(TraceEventType eventType, Int32 id, String message)
+   在 Test.Program.Activity1() 位置 j:\MyCode\Dotnet\ZFreeGo.ChoicePhase\Test\Program.cs:行号 60
+   在 Test.Program.Main(String[] args) 位置 j:\MyCode\Dotnet\ZFreeGo.ChoicePhase\Test\Program.cs:行号 38
+   在 System.AppDomain._nExecuteAssembly(RuntimeAssembly assembly, String[] args)
+   在 System.AppDomain.ExecuteAssembly(String assemblyFile, Evidence assemblySecurity, String[] args)
+   在 Microsoft.VisualStudio.HostingProcess.HostProc.RunUsersAssembly()
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+TraceSourceApp Critical: 3 : Critical message.
+    DateTime=2017-03-28T12:12:54.9703324Z
+    Callstack=   在 System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   在 System.Environment.get_StackTrace()
+   在 System.Diagnostics.TraceEventCache.get_Callstack()
+   在 System.Diagnostics.TraceListener.WriteFooter(TraceEventCache eventCache)
+   在 System.Diagnostics.TraceSource.TraceEvent(TraceEventType eventType, Int32 id, String message)
+   在 Test.Program.Activity2() 位置 j:\MyCode\Dotnet\ZFreeGo.ChoicePhase\Test\Program.cs:行号 65
+   在 Test.Program.Main(String[] args) 位置 j:\MyCode\Dotnet\ZFreeGo.ChoicePhase\Test\Program.cs:行号 43
+   在 System.AppDomain._nExecuteAssembly(RuntimeAssembly assembly, String[] args)
+   在 System.AppDomain.ExecuteAssembly(String assemblyFile, Evidence assemblySecurity, String[] args)
+   在 Microsoft.VisualStudio.HostingProcess.HostProc.RunUsersAssembly()
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+TraceSourceApp Error: 4 : Error message.
+    DateTime=2017-03-28T12:12:54.9703324Z
+    Callstack=   在 System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   在 System.Environment.get_StackTrace()
+   在 System.Diagnostics.TraceEventCache.get_Callstack()
+   在 System.Diagnostics.TraceListener.WriteFooter(TraceEventCache eventCache)
+   在 System.Diagnostics.TraceSource.TraceEvent(TraceEventType eventType, Int32 id, String message)
+   在 Test.Program.Activity3() 位置 j:\MyCode\Dotnet\ZFreeGo.ChoicePhase\Test\Program.cs:行号 70
+   在 Test.Program.Main(String[] args) 位置 j:\MyCode\Dotnet\ZFreeGo.ChoicePhase\Test\Program.cs:行号 51
+   在 System.AppDomain._nExecuteAssembly(RuntimeAssembly assembly, String[] args)
+   在 System.AppDomain.ExecuteAssembly(String assemblyFile, Evidence assemblySecurity, String[] args)
+   在 Microsoft.VisualStudio.HostingProcess.HostProc.RunUsersAssembly()
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
